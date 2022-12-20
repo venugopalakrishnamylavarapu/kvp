@@ -1,0 +1,1825 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;1,600&family=Poppins:wght@200;400&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+
+a{text-decoration: none;}
+
+li{list-style: none;}
+
+a:hover{text-decoration: none;}
+
+
+
+
+/************************NAVBAR-STARTS**********************************/
+
+.menu-bar{
+    background-image: linear-gradient(-90deg, #d38312, #a83279);
+}
+
+.nav-link{
+    font-size: 16px;
+    margin: 3px;
+    color: #fff!important;
+    font-weight: 500;
+}
+.navbar-nav{
+    text-align: right;
+    margin-right: 20px;
+
+}
+.menu-bar .navbar-toggler{
+   padding-right: 20px;
+   outline: none!important;
+   border: none!important;
+
+}
+
+.navbar .fa-solid{
+    color: white;
+    font-size: 26px;
+}
+
+.nav-link:hover{
+    font-weight: 600;
+    border-bottom: 1px solid #fff;
+}
+@media only screen and(max-width:100px) {
+    .nav-link:hover{
+        border-bottom: none!important;
+    }
+}
+
+p{
+font-size: 0.9rem;
+line-height: 1.6;
+font-weight: 400;
+color: #606060;
+} 
+
+#para1{
+    font-size: 1.1rem;
+    line-height: 1.6;
+    font-weight: 400;
+    color: #606060;
+    padding: 30px;
+    }   
+
+
+    
+#para2{
+    font-size: 1.0rem;
+    line-height: 1.6;
+    font-weight: 400;
+    color: #606060;
+    padding: 0px;
+}
+
+
+
+extra-div h2, .servicediv h2{
+    font-size: 0.9rem;
+    font-weight: bold;
+    line-height: 1.1;
+    word-spacing: 4px;
+}
+
+.i{
+    color: #2fccd0;
+}
+
+
+/************************NAVBAR-ENDS**********************************/
+
+
+
+/************************HEADER-STARTS**********************************/
+.headerr {
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(243, 8, 86, 0.5),rgba(243, 8, 86, 0.5)) ,url('../images/bg-1.jpg');
+    background-repeat: no-repeat;
+    clip-path: polygon(100% 0%,100% 77%,50% 100%,0 75%,0 0 );
+    background-size: 100% 100%;
+    position: relative;
+    
+}
+
+
+.headerr:before {
+content: "";
+position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+position: relative;
+opacity: 0.4;
+z-index: -1;
+background: linear-gradient(to right,#e6005c 0%,#e6005c 0%,#bd4040 100%);
+}
+
+
+.header-content{
+width: 100%;
+height: 100vh;
+color: white;
+text-align: center;
+position: relative;
+
+}
+
+.cen-div{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+   -ms-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+}
+
+.cen-button{
+    margin: 0 5px;
+    padding: 12px 35px;
+    outline: none;
+    font-size: 1rem;
+    font-weight: 900;
+    line-height: 1.4;
+    text-align: center;
+}
+
+.cen-button a{
+    text-decoration: none;
+}
+
+
+
+
+
+carusel-img{
+    background-image: url(./images/9a44f19c-d75e-44be-8cbd-d6072bcdd0b3.jpg);
+}
+
+
+/*service offer css strats */
+
+.serviceoffers{
+    background: #e6005c;
+    padding: 50px 0;
+    margin-bottom: 50px;
+}
+
+.headings{
+margin-bottom: 50px;
+}
+
+.headings  h1{
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.names h1{
+    color: #2e2e2e;
+    font-size: 00.9rem;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.service-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*service offer css end*/
+
+/*awards starts css */
+
+.project-work{
+    margin: 100px 0;
+}
+
+.project-work h1{
+    font-size: 2rem;
+    text-align: center;
+}
+/*awards  css end*/
+
+/*pricing   css strats*/
+
+.pricing{
+    width: 100%;
+    height: 100vh;
+    padding: 5px;
+    position: relative;
+}
+
+.pricing:before{
+    content: "";
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0;
+    right: 0;
+    z-index: -1;
+   
+}
+
+.money{
+    font-size: 40px;
+    line-height: 1;
+    
+}
+
+.card{
+    transition: 0.4s ease;
+}
+
+.card-header{
+    font-size: 1.6rem;
+    font-weight:bold ;
+    background: #fff;
+    padding: 25px 9;
+}
+
+.card-body{
+padding: 30px 0px;
+}
+
+.card-body li{
+    margin: 10px 0;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #606060;
+}
+
+.card-footer{
+    background: white!important;
+    padding: 30px 0px ;
+}
+
+.card-footer a{
+     border: 1px solid #e6005c;
+     border-radius: 100px;
+     margin: 0 5px;
+     padding: 12px 35px;
+     outline: none;
+     color: #50d1c0;
+     font-size: 1rem;
+     font-weight: 400;
+     line-height: 1.4;
+     text-align: center;
+        }
+        
+.card-footer a:hover{
+    color:#fff;
+    background: #e6005c;
+    text-decoration: none;
+    box-shadow: 0 0 20px #e6005c;
+        }
+
+.card:hover{
+    transform: translateY(-20px);
+   
+}
+
+.card:hover .card-header{
+color: #e6005c;
+}
+
+.card-second{
+    transform: translateY(-20px);
+    
+}
+
+/*customer support strats*/
+
+.happclients{
+    width: 100%;
+    height: 100vh;
+    padding: 80px 0;
+}
+
+.box{
+    text-align: center;
+    border: 1px solid rgba(0,0,0,0.1);
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.3);
+    border-radius: 2px;
+    transition: 0.3s ease;
+}
+
+
+
+.box:hover p{
+    color: white;
+}
+
+.carousel-indicators{
+    position: absolute;
+    right: 0;
+    bottom: -60px!important;
+}
+
+.carousel-indicators li{
+background-color: #e6005c;
+}
+
+.box a{
+    position: relative;
+}
+
+.box a img{
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+}
+
+
+.box h1{
+    font-size: 13px;
+    font-weight: 400;
+    color: #000;
+
+}
+/*pricing  css end*/
+
+/*contact us  css strats*/
+.contactus{
+    margin-top: 0px;
+}
+
+.contactus{
+   
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    padding: 8px 0;
+    position: relative;
+}
+
+.contactus:before{
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+bottom: 0;
+right: 0;
+background: linear-gradient(23deg, #e6005c 50%, #fff 0%);
+z-index: -1;
+}
+
+.form-button button{
+    border: 1px solid #e43838;
+    border-radius: 100px;
+    margin: 0 5px;
+    padding: 12px 35px;
+    outline: none;
+    color: #f1e8e8;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.4;
+    text-align: center;
+    
+}
+
+::placeholder{
+  min-height: 130px;
+}
+
+
+/*footer strats*/
+.footersection{
+    width: 100%;
+    height: auto;
+    padding: 10px 0 10px 0;
+    background: #e6005c;
+    position: relative;
+}
+
+.footersection p{
+    color: #fff;
+}
+
+.footersection li a{
+    font-size: 0.9rem;
+    line-height: 1.6;
+    font-weight: 400;
+    color: #fff;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.newsletter{
+    width: 100%;
+    height: auto;
+    margin: 80px auto;
+}
+
+#myBtn{
+    display:none;
+    position: fixed;
+    box-orient: 20px;
+    right: 40px;
+    z-index: 99;
+    border: none;
+    background: #00abff;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#mybtn:hover{
+background: #606060;
+}
+
+#calibri{
+font-family:Calibri;
+}
+
+#calibri-body{
+font-family:Calibri (Body);
+}
+/**********footer ends*******************************/
+
+#image{
+    width: 30px;
+    height: 30px;
+}
+
+/****************service strats********************/
+
+.body-ser{
+    display: flex;
+    justify-content: center;
+   align-items: center;
+   min-height: 100vh;
+   background: linear-gradient(#0f4675, #0f4675 50%, #fff 50%,#fff 100%);
+}
+
+.container-ser{
+    width: 1110px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.container-ser .box-ser{
+    position: relative;
+    width: 320px;
+    background: #fff;
+    padding:100px 40px 60px;
+    box-shadow: 0 15px 45px rgba(0, 0, 0,.1);
+}
+.container-ser .box-ser::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ff226d;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.5s;
+}
+ .container-ser .box-ser:hover:before{
+    transform: scaleY(1);
+    transform-origin: bottom;
+    transition: transform 0.5%;
+ }
+.container-ser .box-ser h2{
+    position: absolute;
+    left: 40px;
+    top: 60px;
+    font-size: 4rem;
+    font-family: sans-serif;
+    font-weight: 800;
+    z-index: 1;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+.container-ser .box-ser:hover h2{
+    opacity: 1;
+    color: #fff;
+    transform: translateY(-40px);
+}
+
+.container-ser .box-ser h3{
+    position: relative;
+    font-size: 1.5rem;
+    z-index: 2;
+    color: #333;
+    transition: 0.5;
+}
+
+.container-ser .box-ser p{
+    position: relative;
+    z-index: 2;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #555;
+    transition: 0.5;
+}
+
+.container-ser .box-ser:hover h3,
+.container-ser .box-ser:hover p{
+    color: #fff;
+}
+
+/****************service end********************/
+
+
+/****************service-section starts********************/
+
+
+
+.section-cardStats{
+
+}
+
+.section-cards{
+    width: 25%;
+    display: inline-block;
+    border-radius: 5px;
+    margin: 40px;
+    box-shadow: 2px 2px 10px black;
+}
+
+.section-cards:hover{
+    transform: scale(1.1);
+}
+
+.section-image img{
+    width: 100%;
+    background-color: grey;
+    border-radius: 5px;
+}
+
+.section-dis a:hover{
+   text-decoration: none; 
+}
+
+
+.section-title{
+    text-align: center;
+}
+
+.section-des{
+    text-align: center;
+}
+
+.section-des button{
+    margin-top: 2px;
+    margin-bottom: 10px;
+    background-color: white;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.section-des button:hover{
+   background-color: #000;
+   color: white;
+   transition: .5s;
+}
+/****************service-section ends********************/
+
+
+
+
+/****************contact us stars********************/
+
+.contactus-img{
+    background-image:url(../images/contact-us6.PNG);
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+
+/****************contact us ends********************/
+
+
+contactus-img
+
+
+/****************about starts**********/
+
+
+#About-para{
+margin-top: 50px;
+padding-left: 40px;
+font-weight: 700;
+}
+
+#About-para:hover{
+    margin-top: 50px;
+    padding-left: 40px;
+    font-weight: 900;
+    border-bottom: 1px solid blue;
+    }
+
+.containerAbout{
+    width: 100%;
+    height: 100vh;
+    padding: 0 8%;
+}
+
+.about-header{
+    width: 100%;
+    height: 100vh;
+    background-image:url('../images/abouttt.avif');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;  
+}
+
+.containerAbout h1{
+    text-align: center;
+    padding: 10%;
+    /* margin-bottom: 50px; */
+    font-weight: 600;
+    position: relative;
+}
+
+.containerAbouth1:after{
+content: "";
+background: #e6005c;
+width: 110px;
+height: 10px;
+position: absolute;
+bottom: -5px;
+left: 50%;
+transform: translateX(-50);
+}
+
+#roo{
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+grid-gap: 30px;
+}
+
+.service{
+    text-align: center;
+    padding: 25px, 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor:pointer;
+    background: transparent;
+    transition: transform 0.5,background 0.5;
+}
+
+.service i{
+    font-size: 40px;
+    padding: 10px;
+    color: #e6005c;
+}
+
+.service h2{
+font-weight: 600;
+margin-bottom: 8px;
+}
+
+.service:hover{
+background-color: #e6005c;
+color: #fff;
+transform: scale(1.05);
+}
+
+.service:hover i{
+color: #fff;
+}
+
+
+/****************service strats**********/
+.clip{
+    width: 100%;
+    height: 100vh;
+    background-image:url('../images/service3.webp');
+    background-repeat: no-repeat;
+   
+    background-size: 100% 100%;
+    position: relative; 
+}
+
+.ser-bg{
+    margin-top: 20px;
+    width: 100%;
+    height: 80px;
+    background-color:black;
+    color: #fff;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/****************service ends**********/
+
+
+
+/***************************SMART CLEANING STARTS**********************/
+
+.smart-img{
+    width: 100%;
+    height: 100vh;
+    background-image:url('../images/cleaning\ 5.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;  
+}
+
+.smart-pic1{
+    width: 500px;
+    height: 400px;
+    background-image:url('../images/smart\ cleaning\ ser.webp');
+    background-repeat: no-repeat;
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    background-size: 100% 100%;
+    position: relative;
+    margin-top: 20px;
+}
+
+
+#heading{
+    margin-top: 20px;
+    font-size: xx-large;
+    color: #2fccd0;
+    padding-left: 50px;
+    
+}
+
+#heading:hover{
+    margin-top: 20px;
+    font-size: xx-large;
+    color: #0af3f7;
+    padding-left: 50px;
+    font-weight: 600;
+    border-bottom: 1px solid black;
+}
+
+#para{
+    font-family:sans-serif;
+    font-size: 20px;
+    padding: 30px;
+}
+
+.smart-pic{
+    width: 500px;
+    height: 400px;
+    background-image:url('../images/smart\ cleaning\ 1.cms');
+    background-repeat: no-repeat;
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+    background-size: 100% 100%;
+    position: relative;
+    margin-top: 20px; 
+}
+
+/***************************SMART CLEANING ENDS***********************/
+
+
+/***************************ENGINERING SERVICE STRATS***********************/
+
+.eng-header{
+    width: 100%;
+    height: 100vh;
+    background-image:url('../images/engering\ -seervices.jpeg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;  
+}
+
+.eng-pic{
+    width: 500px;
+    height: 400px;
+    background-image:url('../images/ene-2.webp');
+    background-repeat: no-repeat;
+    clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
+    background-size: 100% 100%;
+    position: relative;
+    margin-top: 20px; 
+}
+
+.eng-pic2{
+    width: 600px;
+    height: 400px;
+    background-image:url('../images/eng-service2.webp');
+    background-repeat: no-repeat;
+    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+    background-size: 100% 100%;
+    position: relative;
+    margin-top: 20px; 
+    padding: 10px;
+}
+
+/***************************ENGINERING SERVICE ENDS***********************/
+
+
+/***************************PLANT MAINTANCE STRATS***********************/
+
+.plant-header{
+    width: 100%;
+    height: 100vh;
+    background-image:url('../images/plant-maintance1.jpeg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.plant-pic{
+    width: 500px;
+    height: 450px;
+    background-image:url('../images/plant-maintance2.PNG');
+    background-repeat: no-repeat;
+    clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+    background-size: 100% 100%;
+    position: relative;
+    margin-top: 20px; 
+}
+
+.plant-pic2{
+    width: 500px;
+    height: 450px;
+    background-image:url('../images/plant-maintance3.webp');
+    background-repeat: no-repeat;
+    clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
+    background-size: 100% 100%;
+    position: relative;
+    margin-top: 20px;
+}
+/***************************PLANT MAINTANCE END***********************/
+
+
+/***************************GREN BUILDING STRATS***********************/
+
+.green-img{
+    width: 100%;
+    height: 100vh;
+    background-image:url('../images/green-building5.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.green-pic{
+    width: 500px;
+    height: 450px;
+    background-image:url('../images/green-building1.jpeg');
+    background-repeat: no-repeat;
+    clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+    background-size: 100% 100%;
+    position: relative;
+    margin-top: 20px; 
+}
+
+.green-pic2{
+    width: 500px;
+    height: 450px;
+    background-image:url('../images/green-building2.jpeg');
+    background-repeat: no-repeat;
+    clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
+    background-size: 100% 100%;
+    position: relative;
+    margin-top: 20px;
+}
+/***************************GREEN BUILDING END***********************/
+
+
+
+/***************************DISINFECTION AND SANITIZATION***********************/
+
+.dis-img{
+    width: 100%;
+    height: 100vh;
+    background-image:url('../images/dis1.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.dis-pic{
+    width: 500px;
+    height: 450px;
+    background-image:url('../images/green-building1.jpeg');
+    background-repeat: no-repeat;
+    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+    background-size: 100% 100%;
+    position: relative;
+    margin-top: 20px; 
+}
+
+.disImg-bg{
+    padding-top: 50px;
+    font-size: 30px;
+    font-weight: 800;
+    color:#ff0084;
+    padding-left: 50px;
+}
+
+
+/***************************DISINFECTION AND SANITIZATION END***********************/
+
+
+
+/***************************GROUND AND LAWN STRATS***********************/
+
+.ground-img{
+    width: 100%;
+    height: 100vh;
+    background-image:url('../images/ground3.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.ground-bg{
+    padding-top: 200px;
+    font-size: 30px;
+    font-weight: 800;
+    color:rgb(238, 255, 0);
+    padding-left: 50px;
+}
+
+.ground-pic{
+    width: 500px;
+    height: 450px;
+    background-image:url('../images/ground4.jpeg');
+    background-repeat: no-repeat;
+    clip-path: polygon(25% 0%, 100% 0, 75% 100%, 0% 100%);
+    background-size: 100% 100%;
+    position: relative;
+    margin-top: 20px; 
+}
+
+@media only screen and (max-width: 768px) {
+   
+  }
+
+.potos{
+padding-left: 30px;
+}
+.potos img{
+    width: 400px;
+    height: 300px;
+    border-radius: 50%;
+    padding: 20px;
+}
+
+.potos img:hover{
+    transform: scale(1.1);
+}
+
+
+/***************************GROUND AND LAWN END***********************/
+
+
+
+
+/***************************PEAST CONTROL STARTS***********************/
+
+.pest-img{
+    width: 100%;
+    height: 100vh;
+    background-image:url('../images/pest1.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.pest-bg{
+    padding-top: 200px;
+    font-size: 30px;
+    font-weight: 800;
+    color:rgb(238, 255, 0);
+    padding-left: 50px;
+}
+
+.pest-pic{
+    width: 500px;
+    height: 450px;
+    background-image:url('../images/pest2.webp');
+    background-repeat: no-repeat;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    background-size: 100% 100%;
+    position: relative;
+    margin-top: 20px; 
+}
+
+.pest-pic:hover{
+    transform: scale(1.1);
+}
+
+
+
+/***************************PEAST CONTROL ENDS***********************/
+
+
+/***************************SECURITY STARTS***********************/
+
+.security-img{
+    width: 100%;
+    height: 100vh;
+    background-image:url('../images/security.webp');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.pest-bg{
+    padding-top: 200px;
+    font-size: 30px;
+    font-weight: 800;
+    color:rgb(238, 255, 0);
+    padding-left: 50px;
+}
+
+.security-pic{
+    width: 500px;
+    height: 450px;
+    background-image:url('../images/security2.webp');
+    background-repeat: no-repeat;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    background-size: 100% 100%;
+    position: relative;
+    margin-top: 20px; 
+}
+
+.security-pic:hover{
+    transform: scale(1.1);
+}
+
+/***************************SECURITY SERVICES ENDS***********************/
+
+
+/***************************MAILROOM MAINTANCE STRATS***********************/
+
+.mail-header{
+    width: 100%;
+    height: 100vh;
+    background-image:url('../images/mailroom1.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.mail-pic{
+    width: 500px;
+    height: 450px;
+    background-image:url('../images/mailroom3.jpg');
+    background-repeat: no-repeat;
+    clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+    background-size: 100% 100%;
+    position: relative;
+    margin-top: 20px; 
+}
+
+.mail-pic:hover{
+transform: scale(1.1);
+}
+
+.mail-pic2{
+    width: 500px;
+    height: 450px;
+    background-image:url('../images/mail3.jpg');
+    background-repeat: no-repeat;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    background-size: 100% 100%;
+    position: relative;
+    margin-top: 20px;
+}
+
+.mail-pic2:hover{
+transform: scale(1.1);
+}
+
+
+/***************************MAILROOM MAINTANCE END***********************/
+
+
+/***************************FACADE CLEANING STRATS***********************/
+
+.facade-header{
+    width: 100%;
+    height: 100vh;
+    background-image:url('../images/facade1.jpeg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.facade-pic{
+    width: 500px;
+    height: 450px;
+    background-image:url('../images/facade2.jpeg');
+    background-repeat: no-repeat;
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+    background-size: 100% 100%;
+    position: relative;
+    margin-top: 20px; 
+}
+
+.facade-pic:hover{
+    transform: scale(1.1);
+}
+
+.facade-pic2{
+    width: 500px;
+    height: 450px;
+    background-image:url('../images/facade3.jpeg');
+    background-repeat: no-repeat;
+    clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+    background-size: 100% 100%;
+    position: relative;
+    margin-top: 20px;
+}
+
+.facade-pic2:hover{
+    transform: scale(1.1);
+}
+/***************************FACADE CLEANING END***********************/
+
+
+/***************************PANTRY AND CAFITERIA STRATS***********************/
+
+.pantry-header{
+    width: 100%;
+    height: 100vh;
+    background-image:url('../images/cafereria4.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.pantry-pic{
+    width: 500px;
+    height: 450px;
+    background-image:url('../images/pantry2.jpeg');
+    background-repeat: no-repeat;
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+    background-size: 100% 100%;
+    position: relative;
+    margin-top: 20px; 
+}
+
+.pantry-pic:hover{
+    transform: scale(1.1);
+}
+
+.pantry-pic2{
+    width: 500px;
+    height: 450px;
+    background-image:url('../images/pantry8.jpeg');
+    background-repeat: no-repeat;
+    clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+    background-size: 100% 100%;
+    position: relative;
+    margin-top: 20px;
+}
+
+.section-col:hover{
+   transform: translatey(10px);
+}
+
+#section-row{
+    padding-left: 40px;
+    }
+    #section-row img{
+        width: 400px;
+        height: 300px;
+        padding: 20px;
+    }
+    
+
+    /* section-body img:hover {
+        transform: scale(1.1); 
+      } */
+/***************************PANTRY AND CAFITERIA END***********************/
+
+
+
+/**************************WASTE MANAGMENET  STRATS********************/
+
+.waste-header{
+    width: 100%;
+    height: 100vh;
+    background-image:url('../images/Waste4.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.waste-pic{
+    width: 550px;
+    height: 550px;
+    background-image:url('../images/waste2.jpeg');
+    background-repeat: no-repeat;
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+    background-size: 100% 100%;
+    position: relative;
+    margin-top: 20px; 
+}
+
+.waste-pic:hover{
+    transform: scale(1.1);
+}
+
+.waste-pic2{
+    width: 500px;
+    height: 450px;
+    background-image:url('../images/waste3.png');
+    background-repeat: no-repeat;
+    clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+    background-size: 100% 100%;
+    position: relative;
+    margin-top: 20px;
+}
+
+.waste-pic2:hover{
+transform: scale(1.1);
+}
+
+.potos-waste{
+    padding-left: 40px;
+    }
+    .potos-waste img{
+        width: 400px;
+        height: 300px;
+        padding: 20px;
+        border-radius: 50%;
+    }
+
+    .potos-waste img:hover {
+        transform: scale(1.1); 
+      }
+/***************************WASTE MANAGMENET END***********************/
+
+
+/***************************GUEST HOUSE STRATS***********************/
+
+.guest-header{
+    width: 100%;
+    height: 100vh;
+    background-image:url('../images/guest9.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.guest-pic{
+    width: 550px;
+    height: 550px;
+    background-image:url('../images/guest-house3.webp'); 
+    background-repeat: no-repeat;
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+    background-size: 100% 100%;
+    position: relative;
+    margin-top: 20px; 
+}
+
+.guest-pic:hover{
+    transform: scale(1.1);
+}
+
+.guest-pic2{
+    width: 500px;
+    height: 450px;
+    background-image:url('../images/guest-house2.webp');
+    background-repeat: no-repeat;
+    clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+    background-size: 100% 100%;
+    position: relative;
+    margin-top: 20px;
+}
+
+
+.guest-pic2:hover{
+    transform: scale(1.1);
+}
+
+.potos-guest{
+    padding-left: 40px;
+    }
+    .potos-guest img{
+        width: 400px;
+        height: 300px;
+        padding: 20px;
+    }
+
+    .potos-guest img:hover {
+        transform: scale(1.1); 
+      }
+/***************************GUEST HOUSE END***********************/
+
+
+/***************************EMERGENCY  STRATS***********************/
+
+.emergency-header{
+    width: 100%;
+    height: 100vh;
+    background-image:url('../images/emergency-bg.webp');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.emergency-pic{
+    width: 550px;
+    height: 450px;
+    background-image:url('../images/emergency-ambulance.webp');
+    background-repeat: no-repeat;
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+    background-size: 100% 100%;
+    position: relative;
+    margin-top: 20px; 
+}
+
+.emergency-pic:hover{
+transform: scale(1.1);
+}
+
+.emergency-pic2{
+    width: 500px;
+    height: 450px;
+    background-image:url('../images/emergency-heart.jpeg');
+    background-repeat: no-repeat;
+    clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+    background-size: 100% 100%;
+    position: relative;
+    margin-top: 20px;
+}
+
+.emergency-pic2:hover{
+transform: scale(1.1);
+}
+
+.potos-emergency{
+    padding-left: 40px;
+    }
+    .potos-emergency img{
+        width: 400px;
+        height: 300px;
+        padding: 20px;
+        border-radius: 5%;
+    }
+
+    .potos-emergency img:hover {
+        transform: scale(1.1); 
+      }
+/***************************EMERGENCY END***********************/
+
+
+/***************************REPAIR AND MAINTANCE STRATS***********************/
+
+.repair-header{
+    width: 100%;
+    height: 100vh;
+    background-image:url('../images/REPAIR3.png.crdownload');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.repair-pic{
+    width: 550px;
+    height: 450px;
+    background-image:url('../images/repair2.jpeg');
+    background-repeat: no-repeat;
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+    background-size: 100% 100%;
+    position: relative;
+    margin-top: 20px; 
+}
+
+.repair-pic:hover{
+    transform: scale(1.1);
+}
+
+.repair-pic2{
+    width: 500px;
+    height: 450px;
+    background-image:url('../images/repair1.webp');
+    background-repeat: no-repeat;
+    clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+    background-size: 100% 100%;
+    position: relative;
+    margin-top: 20px;
+}
+
+.repair-pic2:hover{
+transform: scale(1.1);
+}
+
+/***************************REPAIR AND MAINTANACE END***********************/
+
+
+/***************************IT euipement STRATS***********************/
+
+.ITequipment-header{
+    width: 100%;
+    height: 100vh;
+    background-image:url('../images/IT\ equiptment2.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    border: 1px solid black;
+}
+
+.ITequipment-pic1{
+    width: 550px;
+    height: 450px;
+    background-image:url('../images/IT\ equipement1.jpg');
+    background-repeat: no-repeat;
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+    background-size: 100% 100%;
+    position: relative;
+    margin-top: 20px;
+    border: 1px solid black;
+
+    
+}
+
+.ITequipment-pic1:hover{
+    transform: scale(1.1);
+    
+}
+
+.ITequipment-pic2{
+    width: 500px;
+    height: 450px;
+    background-image:url('../images/IT\ equiptment3.webp');
+    background-repeat: no-repeat;
+    clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+    background-size: 100% 100%;
+    position: relative;
+    margin-top: 30px;
+    border: 1px solid black;
+}
+
+.ITequipment-pic2:hover{
+transform: scale(1.1);
+}
+
+
+.ITequipment-pic3{
+    width: 500px;
+    height: 450px;
+    background-image:url('../images/IT\ equipement4.jpg');
+    background-repeat: no-repeat;
+    clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+    background-size: 100% 100%;
+    position: relative;
+    margin-top: 20px;
+}
+
+.ITequipment-pic3:hover{
+transform: scale(1.1);
+}
+
+
+/***************************IT equipment END***********************/
+
+
+/***************************SAFETY AND SUBSTANABILITY STRATS***********************/
+
+.safety-header{
+    width: 100%;
+    height: 100vh;
+    background-image:url('../images/safety2.jpeg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.safety-pic{
+    width: 550px;
+    height: 450px;
+    background-image:url('../images/safety-6.gif');
+    background-repeat: no-repeat;
+    clip-path: circle(50% at 50% 50%);
+    background-size: 100% 100%;
+    position: relative;
+    margin-top: 20px; 
+}
+
+.safety-pic:hover{
+    transform: scale(1.1);
+}
+
+.safety-pic2{
+    width: 500px;
+    height: 450px;
+    background-image:url('../images/safety1.jpg');
+    background-repeat: no-repeat;
+    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+    background-size: 100% 100%;
+    position: relative;
+    margin-top: 20px;
+}
+
+.safety-pic2:hover{
+    transform: scale(1.1);
+}
+
+.safety-pic3{
+    width: 550px;
+    height: 450px;
+    background-image:url('../images/safety-5.jpg.crdownload');
+    background-repeat: no-repeat;
+    clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+    background-size: 100% 100%;
+    position: relative;
+    margin-top: 20px; 
+}
+
+.safety-pic3:hover{
+    transform: scale(1.1);
+}
+
+.safety-pic4{
+    width: 550px;
+    height: 450px;
+    background-image:url('../images/SAFETY4.jpg');
+    background-repeat: no-repeat;
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    background-size: 100% 100%;
+    position: relative;
+    margin-top: 20px; 
+}
+
+
+.safety-pic4:hover{
+    transform: scale(1.1);
+}
+
+.safety-pic5:hover{
+    transform: scale(1.1);
+}
+
+.safety-pic5{
+    width: 550px;
+    height: 450px;
+    background-image:url('../images/safety3.webp');
+    background-repeat: no-repeat;
+    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+    background-size: 100% 100%;
+    position: relative;
+    margin-top: 20px; 
+}
+.safety-pic6{
+    width: 550px;
+    height: 450px;
+    background-image:url('../images/safety2.jpeg');
+    background-repeat: no-repeat;
+    clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+    background-size: 100% 100%;
+    position: relative;
+    margin-top: 20px; 
+}
+
+
+/*********************SAFETY AND SUBSTANABILITY  END****************/
+
+
+
+/***************************PROPERTY STRATS***********************/
+
+.property-header{
+    width: 100%;
+    height: 100vh;
+    background-image:url('../images/property3.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.property-pic{
+    width: 500px; 
+    height: 450px; 
+    background-image:url('../images/propert3.jpeg'); 
+    background-repeat: no-repeat; 
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%); 
+    background-size: 100% 100%; 
+    position: relative; 
+    margin-top: 20px; 
+}
+
+.property-pic2{
+    width: 500px;
+    height: 550px;
+    background-image:url('../images/property1.webp');
+    background-repeat: no-repeat;
+    clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+    background-size: 100% 100%;
+    position: relative;
+    margin-top: 80px;
+}
+
+
+.potos-property{
+
+}
+/***************************PROPERTY END**********************/
+
+
+/**************************team STRATS***********************/
+
+.team-img{
+    background-image: url(../images/our-team1.jpg);
+    width: 100%;
+    height:100vh;
+    background-repeat: no-repeat;
+   background-size: cover;
+   
+}
+.banner-text{
+color: rgb(4, 4, 4);
+padding-top: 60px;
+padding-left: 20px;
+}
+
+.team-container{
+    margin: 0px;
+    color: white;
+    background-color: #12172b;
+    padding: 0px;
+}
+
+#team-port:hover{
+color: white;
+font-weight: 400;
+}
+
+.team-heading{
+    font-size: 60px;
+    color: white;
+}
+
+.team-heading span{
+    font-style: italic;
+    font-size: 30px;
+}
+
+.profiles{
+    display: flex;
+    justify-content: center;
+    margin: 20px 80px;
+}
+
+.profile{
+    flex-basis: 260px;
+}
+
+.profile .profile-img{
+    height: 360px;
+    width: 360px;
+    border-radius: 50%;
+    filter: grayscale(100%);
+    cursor: pointer;
+    transition: 400ms;
+    padding-left: 25px;
+}
+
+.profile:hover .profile-img{
+  filter: grayscale(0);
+}
+
+.user-name{
+margin-top: 30px;
+font-size: 16px;
+font-weight: 100;
+
+columns: #ccc;
+}
+
+.profile p{
+    font-size: 16px;
+    margin-top: 2px;
+    text-align: justify;
+}
+
+
+@media only screen and (max-width:1150px) {
+    .profiles{
+        flex-direction: column;
+    }
+
+    .profile{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile p{
+        text-align: center;
+        margin: 20px 60px 80px 60px;
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width:900px)  {
+    .heading{
+       font-size: 40px;
+       color: white;
+       text-align: center;
+    }
+
+    .heading span{
+        font-size: 15px;
+    }
+
+    .profile{
+        margin: 20px 0;
+    }
+
+    .profile{
+        margin: 20px 10px 80px 10px;
+    }
+}
+
+
+.middle-box{
+    background-color: #ccc;
+    color: red;
+
+}
+
+/***************************team endS***********************/
+
+
+/***************************Square effect stars***********************/
+
+
+#circle{
+    width: 200px;
+    height:200px;
+    border: 10px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    animation: circle 2s infinity forwards;
+}
+
+@keyframes circle{
+    0%{border-color: red; transform: scale(1);}
+    25%{border-color: gold; transform: scale(1.1);}
+    50%{background-color: lime; scale: (1.3);}
+    75%{background-color: dodgerblue; scale: (1.1);}
+    100%{border-color: purple;transform: scale(1);}
+}
+
+/***************************Square effevts end***********************/
+
+
+/****media query*****/
+
+@media(max-width: 768px){
+    .vav-item {
+        text-align: center!important;
+    }
+
+    .pricing, .happyclients .contactus .newsletter{
+        height: auto;
+        margin-top: 50px;
+
+    }
+    .card-second{
+        transform: translateY(0px);
+        margin:30px;
+    }
+   
+    #newsletterid{
+        margin-top: 30px;
+        
+    }
+    #footerdiv{
+       margin-top: 30px;
+    }
+}
+
+@media only screen and (min-width: 377px) and (max-width:667px){
+.section-cardStats{
+    width: 100%;
+}
+.section-cards{
+    width: 100%;
+}
+}
+
+@media (max-width: 800px) {
+    .section-cardStats{
+      flex-direction: column;
+    }
+  }
+
+
