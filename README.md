@@ -1,2 +1,0 @@
-# kvp
-a static website
