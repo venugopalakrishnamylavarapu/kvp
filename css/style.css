@@ -18,12 +18,17 @@ li {
 }
 
 a:hover {
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 
 body {
     z-index: 1 !important;
+}
+
+p{
+    word-break: break-all;
+    justify-content: stretch;
 }
 
 /************************NAVBAR-STARTS**********************************/
@@ -256,6 +261,13 @@ carusel-img {
 .servicediv i {
     color: white;
 }
+.services .card-title{
+    color: #063970;
+}
+.services .card{
+    border: 0px;
+}
+
 
 /*service offer css end*/
 
@@ -408,13 +420,17 @@ carusel-img {
     font-weight: 400;
     color: #000;
 
-}
+}   
 
 /*pricing  css end*/
 
 /*contact us  css strats*/
 .contactus {
     margin-top: 0px;
+}
+.form-contact input, .form-contact textarea{
+   background-color: rgb(255, 255, 255);
+   border: 2px solid #00004d73;
 }
 
 .contactus {
@@ -559,11 +575,14 @@ carusel-img {
 .container-ser .box-ser {
     position: relative;
     width: 320px;
+    margin: 15px;
     background: #fff;
     padding: 100px 40px 60px;
     box-shadow: 0 15px 45px rgba(0, 0, 0, .1);
 }
-
+.container-ser .box-ser p :hover{
+    color: white !important;
+}
 .container-ser .box-ser::before {
     content: "";
     position: absolute;
@@ -571,7 +590,7 @@ carusel-img {
     left: 0;
     width: 100%;
     height: 100%;
-    background: #ff226d;
+    background: #063970;
     transform: scaleY(0);
     transform-origin: top;
     transition: transform 0.5s;
@@ -586,7 +605,7 @@ carusel-img {
 .container-ser .box-ser h2 {
     position: absolute;
     left: 40px;
-    top: 60px;
+    top: 42px;
     font-size: 4rem;
     font-family: sans-serif;
     font-weight: 800;
@@ -619,7 +638,7 @@ carusel-img {
 
 .container-ser .box-ser:hover h3,
 .container-ser .box-ser:hover p {
-    color: #fff;
+    color: #fff !important;
 }
 
 /****************service end********************/
@@ -705,11 +724,8 @@ contactus-img
     font-weight: 700;
 }
 
-#About-para:hover {
-    margin-top: 50px;
-    padding-left: 40px;
-    font-weight: 900;
-    border-bottom: 1px solid blue;
+.about-heading{
+    color: #063970;
 }
 
 .containerAbout {
@@ -1840,11 +1856,11 @@ contactus-img
 }
 
 
-.middle-box {
-    background-color: #ccc;
+/* .middle-box {
+    background-color: rgb(80, 74, 74);
     color: red;
 
-}
+} */
 
 /***************************team endS***********************/
 
