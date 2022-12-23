@@ -1,80 +1,99 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;1,600&family=Poppins:wght@200;400&display=swap');
 
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'poppins', sans-serif;
+    font-family: sans-serif;
 }
 
 
-a{text-decoration: none;}
+a {
+    text-decoration: none;
+}
 
-li{list-style: none;}
+li {
+    list-style: none;
+}
 
-a:hover{text-decoration: none;}
+a:hover {
+    text-decoration: none;
+}
 
 
-
+body {
+    z-index: 1 !important;
+}
 
 /************************NAVBAR-STARTS**********************************/
 
-.menu-bar{
-    background-image: linear-gradient(-90deg, #d38312, #a83279);
+.menu-bar {
+    background-color: #063970;
 }
 
-.nav-link{
+#headerr .menu-bar {
+    z-index: 10;
+    position: fixed;
+}
+
+.nav-link {
     font-size: 16px;
     margin: 3px;
-    color: #fff!important;
+    color: #fff !important;
     font-weight: 500;
 }
-.navbar-nav{
+
+.navbar-nav {
     text-align: right;
     margin-right: 20px;
 
 }
-.menu-bar .navbar-toggler{
-   padding-right: 20px;
-   outline: none!important;
-   border: none!important;
+.menu-bar .navbar-brand{
+    color: white !important;
+}
+
+.menu-bar .navbar-toggler {
+    padding-right: 20px;
+    outline: none !important;
+    border: none !important;
 
 }
 
-.navbar .fa-solid{
+.navbar .fa-solid {
     color: white;
     font-size: 26px;
 }
 
-.nav-link:hover{
+.nav-link:hover {
     font-weight: 600;
-    border-bottom: 1px solid #fff;
+    padding: auto 7px;
 }
+
 @media only screen and(max-width:100px) {
-    .nav-link:hover{
-        border-bottom: none!important;
+    .nav-link:hover {
+        border-bottom: none !important;
     }
 }
 
-p{
-font-size: 0.9rem;
-line-height: 1.6;
-font-weight: 400;
-color: #606060;
-} 
+p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    font-weight: 400;
+    color: #606060;
+}
 
-#para1{
+#para1 {
     font-size: 1.1rem;
     line-height: 1.6;
     font-weight: 400;
     color: #606060;
     padding: 30px;
-    }   
+}
 
 
-    
-#para2{
+
+#para2 {
     font-size: 1.0rem;
     line-height: 1.6;
     font-weight: 400;
@@ -84,14 +103,15 @@ color: #606060;
 
 
 
-extra-div h2, .servicediv h2{
+extra-div h2,
+.servicediv h2 {
     font-size: 0.9rem;
     font-weight: bold;
     line-height: 1.1;
     word-spacing: 4px;
 }
 
-.i{
+.i {
     color: #2fccd0;
 }
 
@@ -104,50 +124,70 @@ extra-div h2, .servicediv h2{
 .headerr {
     width: 100%;
     height: 100vh;
-    background-image:linear-gradient(rgba(243, 8, 86, 0.5),rgba(243, 8, 86, 0.5)) ,url('../images/bg-1.jpg');
+    background-image: linear-gradient(#ffffff24, #3f51b5), url(../images/bg-1.jpg);
+
     background-repeat: no-repeat;
-    clip-path: polygon(100% 0%,100% 77%,50% 100%,0 75%,0 0 );
     background-size: 100% 100%;
     position: relative;
+    z-index: 100 !important;
+
+}
+
+/* .headerr ::before {
+    content: "  ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    clip-path: polygon(100% 0%, 100% 77%, 50% 100%, 0 75%, 0 0);
+    z-index: -1;
+    background-color: #063970;
+
+} */
+
+.header-color {
+    background-color: #063970;
+}
+
+
+/* .headerr::before {
     
-}
+        content: "  ";
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        clip-path: ellipse(571px 143px at 50% 100%);  
+        clip-path: ellipse(571px 143px at 50% 100%);  
+
+              z-index: -1;
+        background-color: #063970;
+} */
 
 
-.headerr:before {
-content: "";
-position: absolute;
-top: 0;
-bottom: 0;
-left: 0;
-right: 0;
-position: relative;
-opacity: 0.4;
-z-index: -1;
-background: linear-gradient(to right,#e6005c 0%,#e6005c 0%,#bd4040 100%);
-}
-
-
-.header-content{
-width: 100%;
-height: 100vh;
-color: white;
-text-align: center;
-position: relative;
+.header-content {
+    width: 100%;
+    height: 100vh;
+    color: white;
+    text-align: center;
+    position: relative;
 
 }
 
-.cen-div{
+.cen-div {
     width: 100%;
     height: auto;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
-   -ms-transform: translate(-50%,-50%);
-    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
 }
 
-.cen-button{
+.cen-button {
     margin: 0 5px;
     padding: 12px 35px;
     outline: none;
@@ -157,7 +197,7 @@ position: relative;
     text-align: center;
 }
 
-.cen-button a{
+.cen-button a {
     text-decoration: none;
 }
 
@@ -165,66 +205,83 @@ position: relative;
 
 
 
-carusel-img{
+carusel-img {
     background-image: url(./images/9a44f19c-d75e-44be-8cbd-d6072bcdd0b3.jpg);
 }
 
 
 /*service offer css strats */
 
-.serviceoffers{
-    background: #e6005c;
+.serviceoffers {
+    background: #063970;
     padding: 50px 0;
     margin-bottom: 50px;
 }
 
-.headings{
-margin-bottom: 50px;
+.headings {
+    margin-bottom: 50px;
 }
 
-.headings  h1{
+.headings h1 {
     font-size: 1.6rem;
     font-weight: 600;
     text-transform: uppercase;
 }
 
-.names h1{
+.names h4 {
+    color: #ffffff;
+}
+
+.names h1 {
     color: #2e2e2e;
     font-size: 00.9rem;
     text-transform: capitalize;
     font-weight: bold;
 }
 
-.service-icons{
-    display: flex;
+.service-icons {
+    display: none;
     justify-content: center;
     align-items: center;
+}
+
+.servicediv h4 {
+    color: white;
+}
+
+.servicediv p {
+    color: black !important;
+}
+
+.servicediv i {
+    color: white;
 }
 
 /*service offer css end*/
 
 /*awards starts css */
 
-.project-work{
+.project-work {
     margin: 100px 0;
 }
 
-.project-work h1{
+.project-work h1 {
     font-size: 2rem;
     text-align: center;
 }
+
 /*awards  css end*/
 
 /*pricing   css strats*/
 
-.pricing{
+.pricing {
     width: 100%;
     height: 100vh;
     padding: 5px;
     position: relative;
 }
 
-.pricing:before{
+.pricing:before {
     content: "";
     position: absolute;
     top: 0%;
@@ -232,31 +289,31 @@ margin-bottom: 50px;
     left: 0;
     right: 0;
     z-index: -1;
-   
+
 }
 
-.money{
+.money {
     font-size: 40px;
     line-height: 1;
-    
+
 }
 
-.card{
+.card {
     transition: 0.4s ease;
 }
 
-.card-header{
+.card-header {
     font-size: 1.6rem;
-    font-weight:bold ;
+    font-weight: bold;
     background: #fff;
     padding: 25px 9;
 }
 
-.card-body{
-padding: 30px 0px;
+.card-body {
+    padding: 30px 0px;
 }
 
-.card-body li{
+.card-body li {
     margin: 10px 0;
     font-weight: 400;
     font-size: 15px;
@@ -264,103 +321,104 @@ padding: 30px 0px;
     color: #606060;
 }
 
-.card-footer{
-    background: white!important;
-    padding: 30px 0px ;
+.card-footer {
+    background: white !important;
+    padding: 30px 0px;
 }
 
-.card-footer a{
-     border: 1px solid #e6005c;
-     border-radius: 100px;
-     margin: 0 5px;
-     padding: 12px 35px;
-     outline: none;
-     color: #50d1c0;
-     font-size: 1rem;
-     font-weight: 400;
-     line-height: 1.4;
-     text-align: center;
-        }
-        
-.card-footer a:hover{
-    color:#fff;
-    background: #e6005c;
+.card-footer a {
+    border: 1px solid #063970;
+    border-radius: 100px;
+    margin: 0 5px;
+    padding: 12px 35px;
+    outline: none;
+    color: #50d1c0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    text-align: center;
+}
+
+.card-footer a:hover {
+    color: #fff;
+    background: #063970;
     text-decoration: none;
-    box-shadow: 0 0 20px #e6005c;
-        }
-
-.card:hover{
-    transform: translateY(-20px);
-   
+    box-shadow: 0 0 20px #063970;
 }
 
-.card:hover .card-header{
-color: #e6005c;
+.card:hover {
+    transform: translateY(-20px);
+
 }
 
-.card-second{
+.card:hover .card-header {
+    color: #063970;
+}
+
+.card-second {
     transform: translateY(-20px);
-    
+
 }
 
 /*customer support strats*/
 
-.happclients{
+.happclients {
     width: 100%;
     height: 100vh;
     padding: 80px 0;
 }
 
-.box{
+.box {
     text-align: center;
-    border: 1px solid rgba(0,0,0,0.1);
-    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.3);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
     border-radius: 2px;
     transition: 0.3s ease;
 }
 
 
 
-.box:hover p{
+.box:hover p {
     color: white;
 }
 
-.carousel-indicators{
+.carousel-indicators {
     position: absolute;
     right: 0;
-    bottom: -60px!important;
+    bottom: -60px !important;
 }
 
-.carousel-indicators li{
-background-color: #e6005c;
+.carousel-indicators li {
+    background-color: #063970;
 }
 
-.box a{
+.box a {
     position: relative;
 }
 
-.box a img{
+.box a img {
     width: 100px;
     height: 100px;
     margin-top: 20px;
 }
 
 
-.box h1{
+.box h1 {
     font-size: 13px;
     font-weight: 400;
     color: #000;
 
 }
+
 /*pricing  css end*/
 
 /*contact us  css strats*/
-.contactus{
+.contactus {
     margin-top: 0px;
 }
 
-.contactus{
-   
+.contactus {
+
     background-repeat: no-repeat;
     width: 100%;
     height: 100vh;
@@ -368,66 +426,86 @@ background-color: #e6005c;
     position: relative;
 }
 
-.contactus:before{
-content: "";
-position: absolute;
-top: 0;
-left: 0;
-bottom: 0;
-right: 0;
-background: linear-gradient(23deg, #e6005c 50%, #fff 0%);
-z-index: -1;
+.contactus:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    clip-path: polygon(0 0, 100% 100%, 0 100%);
+    background-color: #063970;
+    z-index: -1;
 }
 
-.form-button button{
-    border: 1px solid #e43838;
+.form-button button {
+    border: 1px solid #ffffff;
     border-radius: 100px;
     margin: 0 5px;
     padding: 12px 35px;
     outline: none;
-    color: #f1e8e8;
+    color: #ffffff;
     font-size: 1rem;
     font-weight: 600;
     line-height: 1.4;
     text-align: center;
-    
+
 }
 
-::placeholder{
-  min-height: 130px;
+.form-button button:hover {
+    color: #063906;
+    background-color: white;
+}
+
+::placeholder {
+    min-height: 130px;
 }
 
 
 /*footer strats*/
-.footersection{
+.footersection {
     width: 100%;
     height: auto;
     padding: 10px 0 10px 0;
-    background: #e6005c;
+    background: #063970;
     position: relative;
 }
 
-.footersection p{
+.footersection p {
     color: #fff;
 }
 
-.footersection li a{
+.links a i {
+    font-size: medium;
+}
+
+.links a i:hover {
+    font-weight: bold;
+}
+
+.footersection li a {
     font-size: 0.9rem;
     line-height: 1.6;
     font-weight: 400;
     color: #fff;
     text-transform: capitalize;
     text-align: center;
+    text-decoration: none;
+
 }
 
-.newsletter{
+.footersection li a:hover {
+    font-weight: bold;
+}
+
+.newsletter {
     width: 100%;
     height: auto;
     margin: 80px auto;
 }
 
-#myBtn{
-    display:none;
+#myBtn {
+    display: none;
     position: fixed;
     box-orient: 20px;
     right: 40px;
@@ -438,49 +516,55 @@ z-index: -1;
     border-radius: 10px;
 }
 
-#mybtn:hover{
-background: #606060;
+#mybtn:hover {
+    background: #606060;
 }
 
-#calibri{
-font-family:Calibri;
+#calibri {
+    font-family: Calibri;
 }
 
-#calibri-body{
-font-family:Calibri (Body);
+#calibri-body {
+    font-family: Calibri (Body);
 }
+
+#calibri-body li a {
+    color: rgb(0, 0, 0);
+}
+
 /**********footer ends*******************************/
 
-#image{
+#image {
     width: 30px;
     height: 30px;
 }
 
 /****************service strats********************/
 
-.body-ser{
+.body-ser {
     display: flex;
     justify-content: center;
-   align-items: center;
-   min-height: 100vh;
-   background: linear-gradient(#0f4675, #0f4675 50%, #fff 50%,#fff 100%);
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(#0f4675, #0f4675 50%, #fff 50%, #fff 100%);
 }
 
-.container-ser{
+.container-ser {
     width: 1110px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-.container-ser .box-ser{
+.container-ser .box-ser {
     position: relative;
     width: 320px;
     background: #fff;
-    padding:100px 40px 60px;
-    box-shadow: 0 15px 45px rgba(0, 0, 0,.1);
+    padding: 100px 40px 60px;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, .1);
 }
-.container-ser .box-ser::before{
+
+.container-ser .box-ser::before {
     content: "";
     position: absolute;
     top: 0;
@@ -492,12 +576,14 @@ font-family:Calibri (Body);
     transform-origin: top;
     transition: transform 0.5s;
 }
- .container-ser .box-ser:hover:before{
+
+.container-ser .box-ser:hover:before {
     transform: scaleY(1);
     transform-origin: bottom;
     transition: transform 0.5%;
- }
-.container-ser .box-ser h2{
+}
+
+.container-ser .box-ser h2 {
     position: absolute;
     left: 40px;
     top: 60px;
@@ -509,13 +595,13 @@ font-family:Calibri (Body);
     transition: 0.5s;
 }
 
-.container-ser .box-ser:hover h2{
+.container-ser .box-ser:hover h2 {
     opacity: 1;
     color: #fff;
     transform: translateY(-40px);
 }
 
-.container-ser .box-ser h3{
+.container-ser .box-ser h3 {
     position: relative;
     font-size: 1.5rem;
     z-index: 2;
@@ -523,7 +609,7 @@ font-family:Calibri (Body);
     transition: 0.5;
 }
 
-.container-ser .box-ser p{
+.container-ser .box-ser p {
     position: relative;
     z-index: 2;
     font-family: Arial, Helvetica, sans-serif;
@@ -532,7 +618,7 @@ font-family:Calibri (Body);
 }
 
 .container-ser .box-ser:hover h3,
-.container-ser .box-ser:hover p{
+.container-ser .box-ser:hover p {
     color: #fff;
 }
 
@@ -543,11 +629,9 @@ font-family:Calibri (Body);
 
 
 
-.section-cardStats{
+.section-cardStats {}
 
-}
-
-.section-cards{
+.section-cards {
     width: 25%;
     display: inline-block;
     border-radius: 5px;
@@ -555,30 +639,30 @@ font-family:Calibri (Body);
     box-shadow: 2px 2px 10px black;
 }
 
-.section-cards:hover{
+.section-cards:hover {
     transform: scale(1.1);
 }
 
-.section-image img{
+.section-image img {
     width: 100%;
     background-color: grey;
     border-radius: 5px;
 }
 
-.section-dis a:hover{
-   text-decoration: none; 
+.section-dis a:hover {
+    text-decoration: none;
 }
 
 
-.section-title{
+.section-title {
     text-align: center;
 }
 
-.section-des{
+.section-des {
     text-align: center;
 }
 
-.section-des button{
+.section-des button {
     margin-top: 2px;
     margin-bottom: 10px;
     background-color: white;
@@ -588,11 +672,12 @@ font-family:Calibri (Body);
     cursor: pointer;
 }
 
-.section-des button:hover{
-   background-color: #000;
-   color: white;
-   transition: .5s;
+.section-des button:hover {
+    background-color: #000;
+    color: white;
+    transition: .5s;
 }
+
 /****************service-section ends********************/
 
 
@@ -600,8 +685,8 @@ font-family:Calibri (Body);
 
 /****************contact us stars********************/
 
-.contactus-img{
-    background-image:url(../images/contact-us6.PNG);
+.contactus-img {
+    background-image: url(../images/contact-us6.PNG);
     width: 100%;
     height: 100vh;
     background-repeat: no-repeat;
@@ -611,40 +696,38 @@ font-family:Calibri (Body);
 
 
 contactus-img
-
-
 /****************about starts**********/
 
 
-#About-para{
-margin-top: 50px;
-padding-left: 40px;
-font-weight: 700;
+#About-para {
+    margin-top: 50px;
+    padding-left: 40px;
+    font-weight: 700;
 }
 
-#About-para:hover{
+#About-para:hover {
     margin-top: 50px;
     padding-left: 40px;
     font-weight: 900;
     border-bottom: 1px solid blue;
-    }
+}
 
-.containerAbout{
+.containerAbout {
     width: 100%;
     height: 100vh;
     padding: 0 8%;
 }
 
-.about-header{
+.about-header {
     width: 100%;
     height: 100vh;
-    background-image:url('../images/abouttt.avif');
+    background-image: url('../images/abouttt.avif');
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    position: relative;  
+    position: relative;
 }
 
-.containerAbout h1{
+.containerAbout h1 {
     text-align: center;
     padding: 10%;
     /* margin-bottom: 50px; */
@@ -652,71 +735,71 @@ font-weight: 700;
     position: relative;
 }
 
-.containerAbouth1:after{
-content: "";
-background: #e6005c;
-width: 110px;
-height: 10px;
-position: absolute;
-bottom: -5px;
-left: 50%;
-transform: translateX(-50);
+.containerAbouth1:after {
+    content: "";
+    background: #063970;
+    width: 110px;
+    height: 10px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50);
 }
 
-#roo{
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
-grid-gap: 30px;
+#roo {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
 }
 
-.service{
+.service {
     text-align: center;
     padding: 25px, 10px;
     border-radius: 5px;
     font-size: 14px;
-    cursor:pointer;
+    cursor: pointer;
     background: transparent;
-    transition: transform 0.5,background 0.5;
+    transition: transform 0.5, background 0.5;
 }
 
-.service i{
+.service i {
     font-size: 40px;
     padding: 10px;
-    color: #e6005c;
+    color: #063970;
 }
 
-.service h2{
-font-weight: 600;
-margin-bottom: 8px;
+.service h2 {
+    font-weight: 600;
+    margin-bottom: 8px;
 }
 
-.service:hover{
-background-color: #e6005c;
-color: #fff;
-transform: scale(1.05);
+.service:hover {
+    background-color: #063970;
+    color: #fff;
+    transform: scale(1.05);
 }
 
-.service:hover i{
-color: #fff;
+.service:hover i {
+    color: #fff;
 }
 
 
 /****************service strats**********/
-.clip{
+.clip {
     width: 100%;
     height: 100vh;
-    background-image:url('../images/service3.webp');
+    background-image: url('../images/service3.webp');
     background-repeat: no-repeat;
-   
+
     background-size: 100% 100%;
-    position: relative; 
+    position: relative;
 }
 
-.ser-bg{
+.ser-bg {
     margin-top: 20px;
     width: 100%;
     height: 80px;
-    background-color:black;
+    background-color: black;
     color: #fff;
     padding-top: 20px;
     display: flex;
@@ -730,19 +813,19 @@ color: #fff;
 
 /***************************SMART CLEANING STARTS**********************/
 
-.smart-img{
+.smart-img {
     width: 100%;
     height: 100vh;
-    background-image:url('../images/cleaning\ 5.jpg');
+    background-image: url('../images/cleaning\ 5.jpg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    position: relative;  
+    position: relative;
 }
 
-.smart-pic1{
+.smart-pic1 {
     width: 500px;
     height: 400px;
-    background-image:url('../images/smart\ cleaning\ ser.webp');
+    background-image: url('../images/smart\ cleaning\ ser.webp');
     background-repeat: no-repeat;
     clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
     background-size: 100% 100%;
@@ -751,15 +834,15 @@ color: #fff;
 }
 
 
-#heading{
+#heading {
     margin-top: 20px;
     font-size: xx-large;
     color: #2fccd0;
     padding-left: 50px;
-    
+
 }
 
-#heading:hover{
+#heading:hover {
     margin-top: 20px;
     font-size: xx-large;
     color: #0af3f7;
@@ -768,21 +851,21 @@ color: #fff;
     border-bottom: 1px solid black;
 }
 
-#para{
-    font-family:sans-serif;
+#para {
+    font-family: sans-serif;
     font-size: 20px;
     padding: 30px;
 }
 
-.smart-pic{
+.smart-pic {
     width: 500px;
     height: 400px;
-    background-image:url('../images/smart\ cleaning\ 1.cms');
+    background-image: url('../images/smart\ cleaning\ 1.cms');
     background-repeat: no-repeat;
     clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
     background-size: 100% 100%;
     position: relative;
-    margin-top: 20px; 
+    margin-top: 20px;
 }
 
 /***************************SMART CLEANING ENDS***********************/
@@ -790,35 +873,35 @@ color: #fff;
 
 /***************************ENGINERING SERVICE STRATS***********************/
 
-.eng-header{
+.eng-header {
     width: 100%;
     height: 100vh;
-    background-image:url('../images/engering\ -seervices.jpeg');
+    background-image: url('../images/engering\ -seervices.jpeg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    position: relative;  
+    position: relative;
 }
 
-.eng-pic{
+.eng-pic {
     width: 500px;
     height: 400px;
-    background-image:url('../images/ene-2.webp');
+    background-image: url('../images/ene-2.webp');
     background-repeat: no-repeat;
     clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
     background-size: 100% 100%;
     position: relative;
-    margin-top: 20px; 
+    margin-top: 20px;
 }
 
-.eng-pic2{
+.eng-pic2 {
     width: 600px;
     height: 400px;
-    background-image:url('../images/eng-service2.webp');
+    background-image: url('../images/eng-service2.webp');
     background-repeat: no-repeat;
     clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
     background-size: 100% 100%;
     position: relative;
-    margin-top: 20px; 
+    margin-top: 20px;
     padding: 10px;
 }
 
@@ -827,102 +910,104 @@ color: #fff;
 
 /***************************PLANT MAINTANCE STRATS***********************/
 
-.plant-header{
+.plant-header {
     width: 100%;
     height: 100vh;
-    background-image:url('../images/plant-maintance1.jpeg');
+    background-image: url('../images/plant-maintance1.jpeg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
     position: relative;
 }
 
-.plant-pic{
+.plant-pic {
     width: 500px;
     height: 450px;
-    background-image:url('../images/plant-maintance2.PNG');
+    background-image: url('../images/plant-maintance2.PNG');
     background-repeat: no-repeat;
     clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
     background-size: 100% 100%;
     position: relative;
-    margin-top: 20px; 
+    margin-top: 20px;
 }
 
-.plant-pic2{
+.plant-pic2 {
     width: 500px;
     height: 450px;
-    background-image:url('../images/plant-maintance3.webp');
+    background-image: url('../images/plant-maintance3.webp');
     background-repeat: no-repeat;
     clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
     background-size: 100% 100%;
     position: relative;
     margin-top: 20px;
 }
+
 /***************************PLANT MAINTANCE END***********************/
 
 
 /***************************GREN BUILDING STRATS***********************/
 
-.green-img{
+.green-img {
     width: 100%;
     height: 100vh;
-    background-image:url('../images/green-building5.jpg');
+    background-image: url('../images/green-building5.jpg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
     position: relative;
 }
 
-.green-pic{
+.green-pic {
     width: 500px;
     height: 450px;
-    background-image:url('../images/green-building1.jpeg');
+    background-image: url('../images/green-building1.jpeg');
     background-repeat: no-repeat;
     clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
     background-size: 100% 100%;
     position: relative;
-    margin-top: 20px; 
+    margin-top: 20px;
 }
 
-.green-pic2{
+.green-pic2 {
     width: 500px;
     height: 450px;
-    background-image:url('../images/green-building2.jpeg');
+    background-image: url('../images/green-building2.jpeg');
     background-repeat: no-repeat;
     clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
     background-size: 100% 100%;
     position: relative;
     margin-top: 20px;
 }
+
 /***************************GREEN BUILDING END***********************/
 
 
 
 /***************************DISINFECTION AND SANITIZATION***********************/
 
-.dis-img{
+.dis-img {
     width: 100%;
     height: 100vh;
-    background-image:url('../images/dis1.jpg');
+    background-image: url('../images/dis1.jpg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
     position: relative;
 }
 
-.dis-pic{
+.dis-pic {
     width: 500px;
     height: 450px;
-    background-image:url('../images/green-building1.jpeg');
+    background-image: url('../images/green-building1.jpeg');
     background-repeat: no-repeat;
     clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
     background-size: 100% 100%;
     position: relative;
-    margin-top: 20px; 
+    margin-top: 20px;
 }
 
-.disImg-bg{
+.disImg-bg {
     padding-top: 50px;
     font-size: 30px;
     font-weight: 800;
-    color:#ff0084;
+    color: #ff0084;
     padding-left: 50px;
 }
 
@@ -933,49 +1018,48 @@ color: #fff;
 
 /***************************GROUND AND LAWN STRATS***********************/
 
-.ground-img{
+.ground-img {
     width: 100%;
     height: 100vh;
-    background-image:url('../images/ground3.jpg');
+    background-image: url('../images/ground3.jpg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
     position: relative;
 }
 
-.ground-bg{
+.ground-bg {
     padding-top: 200px;
     font-size: 30px;
     font-weight: 800;
-    color:rgb(238, 255, 0);
+    color: rgb(238, 255, 0);
     padding-left: 50px;
 }
 
-.ground-pic{
+.ground-pic {
     width: 500px;
     height: 450px;
-    background-image:url('../images/ground4.jpeg');
+    background-image: url('../images/ground4.jpeg');
     background-repeat: no-repeat;
     clip-path: polygon(25% 0%, 100% 0, 75% 100%, 0% 100%);
     background-size: 100% 100%;
     position: relative;
-    margin-top: 20px; 
+    margin-top: 20px;
 }
 
-@media only screen and (max-width: 768px) {
-   
-  }
+@media only screen and (max-width: 768px) {}
 
-.potos{
-padding-left: 30px;
+.potos {
+    padding-left: 30px;
 }
-.potos img{
+
+.potos img {
     width: 400px;
     height: 300px;
     border-radius: 50%;
     padding: 20px;
 }
 
-.potos img:hover{
+.potos img:hover {
     transform: scale(1.1);
 }
 
@@ -987,35 +1071,35 @@ padding-left: 30px;
 
 /***************************PEAST CONTROL STARTS***********************/
 
-.pest-img{
+.pest-img {
     width: 100%;
     height: 100vh;
-    background-image:url('../images/pest1.jpg');
+    background-image: url('../images/pest1.jpg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
     position: relative;
 }
 
-.pest-bg{
+.pest-bg {
     padding-top: 200px;
     font-size: 30px;
     font-weight: 800;
-    color:rgb(238, 255, 0);
+    color: rgb(238, 255, 0);
     padding-left: 50px;
 }
 
-.pest-pic{
+.pest-pic {
     width: 500px;
     height: 450px;
-    background-image:url('../images/pest2.webp');
+    background-image: url('../images/pest2.webp');
     background-repeat: no-repeat;
     clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
     background-size: 100% 100%;
     position: relative;
-    margin-top: 20px; 
+    margin-top: 20px;
 }
 
-.pest-pic:hover{
+.pest-pic:hover {
     transform: scale(1.1);
 }
 
@@ -1026,35 +1110,35 @@ padding-left: 30px;
 
 /***************************SECURITY STARTS***********************/
 
-.security-img{
+.security-img {
     width: 100%;
     height: 100vh;
-    background-image:url('../images/security.webp');
+    background-image: url('../images/security.webp');
     background-repeat: no-repeat;
     background-size: 100% 100%;
     position: relative;
 }
 
-.pest-bg{
+.pest-bg {
     padding-top: 200px;
     font-size: 30px;
     font-weight: 800;
-    color:rgb(238, 255, 0);
+    color: rgb(238, 255, 0);
     padding-left: 50px;
 }
 
-.security-pic{
+.security-pic {
     width: 500px;
     height: 450px;
-    background-image:url('../images/security2.webp');
+    background-image: url('../images/security2.webp');
     background-repeat: no-repeat;
     clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
     background-size: 100% 100%;
     position: relative;
-    margin-top: 20px; 
+    margin-top: 20px;
 }
 
-.security-pic:hover{
+.security-pic:hover {
     transform: scale(1.1);
 }
 
@@ -1063,34 +1147,34 @@ padding-left: 30px;
 
 /***************************MAILROOM MAINTANCE STRATS***********************/
 
-.mail-header{
+.mail-header {
     width: 100%;
     height: 100vh;
-    background-image:url('../images/mailroom1.jpg');
+    background-image: url('../images/mailroom1.jpg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
     position: relative;
 }
 
-.mail-pic{
+.mail-pic {
     width: 500px;
     height: 450px;
-    background-image:url('../images/mailroom3.jpg');
+    background-image: url('../images/mailroom3.jpg');
     background-repeat: no-repeat;
     clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
     background-size: 100% 100%;
     position: relative;
-    margin-top: 20px; 
+    margin-top: 20px;
 }
 
-.mail-pic:hover{
-transform: scale(1.1);
+.mail-pic:hover {
+    transform: scale(1.1);
 }
 
-.mail-pic2{
+.mail-pic2 {
     width: 500px;
     height: 450px;
-    background-image:url('../images/mail3.jpg');
+    background-image: url('../images/mail3.jpg');
     background-repeat: no-repeat;
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
     background-size: 100% 100%;
@@ -1098,8 +1182,8 @@ transform: scale(1.1);
     margin-top: 20px;
 }
 
-.mail-pic2:hover{
-transform: scale(1.1);
+.mail-pic2:hover {
+    transform: scale(1.1);
 }
 
 
@@ -1108,34 +1192,34 @@ transform: scale(1.1);
 
 /***************************FACADE CLEANING STRATS***********************/
 
-.facade-header{
+.facade-header {
     width: 100%;
     height: 100vh;
-    background-image:url('../images/facade1.jpeg');
+    background-image: url('../images/facade1.jpeg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
     position: relative;
 }
 
-.facade-pic{
+.facade-pic {
     width: 500px;
     height: 450px;
-    background-image:url('../images/facade2.jpeg');
+    background-image: url('../images/facade2.jpeg');
     background-repeat: no-repeat;
     clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
     background-size: 100% 100%;
     position: relative;
-    margin-top: 20px; 
+    margin-top: 20px;
 }
 
-.facade-pic:hover{
+.facade-pic:hover {
     transform: scale(1.1);
 }
 
-.facade-pic2{
+.facade-pic2 {
     width: 500px;
     height: 450px;
-    background-image:url('../images/facade3.jpeg');
+    background-image: url('../images/facade3.jpeg');
     background-repeat: no-repeat;
     clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
     background-size: 100% 100%;
@@ -1143,42 +1227,43 @@ transform: scale(1.1);
     margin-top: 20px;
 }
 
-.facade-pic2:hover{
+.facade-pic2:hover {
     transform: scale(1.1);
 }
+
 /***************************FACADE CLEANING END***********************/
 
 
 /***************************PANTRY AND CAFITERIA STRATS***********************/
 
-.pantry-header{
+.pantry-header {
     width: 100%;
     height: 100vh;
-    background-image:url('../images/cafereria4.jpg');
+    background-image: url('../images/cafereria4.jpg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
     position: relative;
 }
 
-.pantry-pic{
+.pantry-pic {
     width: 500px;
     height: 450px;
-    background-image:url('../images/pantry2.jpeg');
+    background-image: url('../images/pantry2.jpeg');
     background-repeat: no-repeat;
     clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
     background-size: 100% 100%;
     position: relative;
-    margin-top: 20px; 
+    margin-top: 20px;
 }
 
-.pantry-pic:hover{
+.pantry-pic:hover {
     transform: scale(1.1);
 }
 
-.pantry-pic2{
+.pantry-pic2 {
     width: 500px;
     height: 450px;
-    background-image:url('../images/pantry8.jpeg');
+    background-image: url('../images/pantry8.jpeg');
     background-repeat: no-repeat;
     clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
     background-size: 100% 100%;
@@ -1186,21 +1271,22 @@ transform: scale(1.1);
     margin-top: 20px;
 }
 
-.section-col:hover{
-   transform: translatey(10px);
+.section-col:hover {
+    transform: translatey(10px);
 }
 
-#section-row{
+#section-row {
     padding-left: 40px;
-    }
-    #section-row img{
-        width: 400px;
-        height: 300px;
-        padding: 20px;
-    }
-    
+}
 
-    /* section-body img:hover {
+#section-row img {
+    width: 400px;
+    height: 300px;
+    padding: 20px;
+}
+
+
+/* section-body img:hover {
         transform: scale(1.1); 
       } */
 /***************************PANTRY AND CAFITERIA END***********************/
@@ -1209,34 +1295,34 @@ transform: scale(1.1);
 
 /**************************WASTE MANAGMENET  STRATS********************/
 
-.waste-header{
+.waste-header {
     width: 100%;
     height: 100vh;
-    background-image:url('../images/Waste4.png');
+    background-image: url('../images/Waste4.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
     position: relative;
 }
 
-.waste-pic{
+.waste-pic {
     width: 550px;
     height: 550px;
-    background-image:url('../images/waste2.jpeg');
+    background-image: url('../images/waste2.jpeg');
     background-repeat: no-repeat;
     clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
     background-size: 100% 100%;
     position: relative;
-    margin-top: 20px; 
+    margin-top: 20px;
 }
 
-.waste-pic:hover{
+.waste-pic:hover {
     transform: scale(1.1);
 }
 
-.waste-pic2{
+.waste-pic2 {
     width: 500px;
     height: 450px;
-    background-image:url('../images/waste3.png');
+    background-image: url('../images/waste3.png');
     background-repeat: no-repeat;
     clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
     background-size: 100% 100%;
@@ -1244,56 +1330,58 @@ transform: scale(1.1);
     margin-top: 20px;
 }
 
-.waste-pic2:hover{
-transform: scale(1.1);
+.waste-pic2:hover {
+    transform: scale(1.1);
 }
 
-.potos-waste{
+.potos-waste {
     padding-left: 40px;
-    }
-    .potos-waste img{
-        width: 400px;
-        height: 300px;
-        padding: 20px;
-        border-radius: 50%;
-    }
+}
 
-    .potos-waste img:hover {
-        transform: scale(1.1); 
-      }
+.potos-waste img {
+    width: 400px;
+    height: 300px;
+    padding: 20px;
+    border-radius: 50%;
+}
+
+.potos-waste img:hover {
+    transform: scale(1.1);
+}
+
 /***************************WASTE MANAGMENET END***********************/
 
 
 /***************************GUEST HOUSE STRATS***********************/
 
-.guest-header{
+.guest-header {
     width: 100%;
     height: 100vh;
-    background-image:url('../images/guest9.jpg');
+    background-image: url('../images/guest9.jpg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
     position: relative;
 }
 
-.guest-pic{
+.guest-pic {
     width: 550px;
     height: 550px;
-    background-image:url('../images/guest-house3.webp'); 
+    background-image: url('../images/guest-house3.webp');
     background-repeat: no-repeat;
     clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
     background-size: 100% 100%;
     position: relative;
-    margin-top: 20px; 
+    margin-top: 20px;
 }
 
-.guest-pic:hover{
+.guest-pic:hover {
     transform: scale(1.1);
 }
 
-.guest-pic2{
+.guest-pic2 {
     width: 500px;
     height: 450px;
-    background-image:url('../images/guest-house2.webp');
+    background-image: url('../images/guest-house2.webp');
     background-repeat: no-repeat;
     clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
     background-size: 100% 100%;
@@ -1302,55 +1390,57 @@ transform: scale(1.1);
 }
 
 
-.guest-pic2:hover{
+.guest-pic2:hover {
     transform: scale(1.1);
 }
 
-.potos-guest{
+.potos-guest {
     padding-left: 40px;
-    }
-    .potos-guest img{
-        width: 400px;
-        height: 300px;
-        padding: 20px;
-    }
+}
 
-    .potos-guest img:hover {
-        transform: scale(1.1); 
-      }
+.potos-guest img {
+    width: 400px;
+    height: 300px;
+    padding: 20px;
+}
+
+.potos-guest img:hover {
+    transform: scale(1.1);
+}
+
 /***************************GUEST HOUSE END***********************/
 
 
 /***************************EMERGENCY  STRATS***********************/
 
-.emergency-header{
+.emergency-header {
     width: 100%;
     height: 100vh;
-    background-image:url('../images/emergency-bg.webp');
+    background-image: url('../images/emergency-bg.webp');
     background-repeat: no-repeat;
     background-size: 100% 100%;
     position: relative;
 }
 
-.emergency-pic{
+.emergency-pic {
     width: 550px;
     height: 450px;
-    background-image:url('../images/emergency-ambulance.webp');
+    background-image: url('../images/emergency-ambulance.webp');
     background-repeat: no-repeat;
     clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
     background-size: 100% 100%;
     position: relative;
-    margin-top: 20px; 
+    margin-top: 20px;
 }
 
-.emergency-pic:hover{
-transform: scale(1.1);
+.emergency-pic:hover {
+    transform: scale(1.1);
 }
 
-.emergency-pic2{
+.emergency-pic2 {
     width: 500px;
     height: 450px;
-    background-image:url('../images/emergency-heart.jpeg');
+    background-image: url('../images/emergency-heart.jpeg');
     background-repeat: no-repeat;
     clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
     background-size: 100% 100%;
@@ -1358,56 +1448,58 @@ transform: scale(1.1);
     margin-top: 20px;
 }
 
-.emergency-pic2:hover{
-transform: scale(1.1);
+.emergency-pic2:hover {
+    transform: scale(1.1);
 }
 
-.potos-emergency{
+.potos-emergency {
     padding-left: 40px;
-    }
-    .potos-emergency img{
-        width: 400px;
-        height: 300px;
-        padding: 20px;
-        border-radius: 5%;
-    }
+}
 
-    .potos-emergency img:hover {
-        transform: scale(1.1); 
-      }
+.potos-emergency img {
+    width: 400px;
+    height: 300px;
+    padding: 20px;
+    border-radius: 5%;
+}
+
+.potos-emergency img:hover {
+    transform: scale(1.1);
+}
+
 /***************************EMERGENCY END***********************/
 
 
 /***************************REPAIR AND MAINTANCE STRATS***********************/
 
-.repair-header{
+.repair-header {
     width: 100%;
     height: 100vh;
-    background-image:url('../images/REPAIR3.png.crdownload');
+    background-image: url('../images/REPAIR3.png.crdownload');
     background-repeat: no-repeat;
     background-size: 100% 100%;
     position: relative;
 }
 
-.repair-pic{
+.repair-pic {
     width: 550px;
     height: 450px;
-    background-image:url('../images/repair2.jpeg');
+    background-image: url('../images/repair2.jpeg');
     background-repeat: no-repeat;
     clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
     background-size: 100% 100%;
     position: relative;
-    margin-top: 20px; 
+    margin-top: 20px;
 }
 
-.repair-pic:hover{
+.repair-pic:hover {
     transform: scale(1.1);
 }
 
-.repair-pic2{
+.repair-pic2 {
     width: 500px;
     height: 450px;
-    background-image:url('../images/repair1.webp');
+    background-image: url('../images/repair1.webp');
     background-repeat: no-repeat;
     clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
     background-size: 100% 100%;
@@ -1415,8 +1507,8 @@ transform: scale(1.1);
     margin-top: 20px;
 }
 
-.repair-pic2:hover{
-transform: scale(1.1);
+.repair-pic2:hover {
+    transform: scale(1.1);
 }
 
 /***************************REPAIR AND MAINTANACE END***********************/
@@ -1424,20 +1516,20 @@ transform: scale(1.1);
 
 /***************************IT euipement STRATS***********************/
 
-.ITequipment-header{
+.ITequipment-header {
     width: 100%;
     height: 100vh;
-    background-image:url('../images/IT\ equiptment2.jpg');
+    background-image: url('../images/IT\ equiptment2.jpg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
     position: relative;
     border: 1px solid black;
 }
 
-.ITequipment-pic1{
+.ITequipment-pic1 {
     width: 550px;
     height: 450px;
-    background-image:url('../images/IT\ equipement1.jpg');
+    background-image: url('../images/IT\ equipement1.jpg');
     background-repeat: no-repeat;
     clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
     background-size: 100% 100%;
@@ -1445,18 +1537,18 @@ transform: scale(1.1);
     margin-top: 20px;
     border: 1px solid black;
 
-    
+
 }
 
-.ITequipment-pic1:hover{
+.ITequipment-pic1:hover {
     transform: scale(1.1);
-    
+
 }
 
-.ITequipment-pic2{
+.ITequipment-pic2 {
     width: 500px;
     height: 450px;
-    background-image:url('../images/IT\ equiptment3.webp');
+    background-image: url('../images/IT\ equiptment3.webp');
     background-repeat: no-repeat;
     clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
     background-size: 100% 100%;
@@ -1465,15 +1557,15 @@ transform: scale(1.1);
     border: 1px solid black;
 }
 
-.ITequipment-pic2:hover{
-transform: scale(1.1);
+.ITequipment-pic2:hover {
+    transform: scale(1.1);
 }
 
 
-.ITequipment-pic3{
+.ITequipment-pic3 {
     width: 500px;
     height: 450px;
-    background-image:url('../images/IT\ equipement4.jpg');
+    background-image: url('../images/IT\ equipement4.jpg');
     background-repeat: no-repeat;
     clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
     background-size: 100% 100%;
@@ -1481,8 +1573,8 @@ transform: scale(1.1);
     margin-top: 20px;
 }
 
-.ITequipment-pic3:hover{
-transform: scale(1.1);
+.ITequipment-pic3:hover {
+    transform: scale(1.1);
 }
 
 
@@ -1491,34 +1583,34 @@ transform: scale(1.1);
 
 /***************************SAFETY AND SUBSTANABILITY STRATS***********************/
 
-.safety-header{
+.safety-header {
     width: 100%;
     height: 100vh;
-    background-image:url('../images/safety2.jpeg');
+    background-image: url('../images/safety2.jpeg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
     position: relative;
 }
 
-.safety-pic{
+.safety-pic {
     width: 550px;
     height: 450px;
-    background-image:url('../images/safety-6.gif');
+    background-image: url('../images/safety-6.gif');
     background-repeat: no-repeat;
     clip-path: circle(50% at 50% 50%);
     background-size: 100% 100%;
     position: relative;
-    margin-top: 20px; 
+    margin-top: 20px;
 }
 
-.safety-pic:hover{
+.safety-pic:hover {
     transform: scale(1.1);
 }
 
-.safety-pic2{
+.safety-pic2 {
     width: 500px;
     height: 450px;
-    background-image:url('../images/safety1.jpg');
+    background-image: url('../images/safety1.jpg');
     background-repeat: no-repeat;
     clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
     background-size: 100% 100%;
@@ -1526,64 +1618,65 @@ transform: scale(1.1);
     margin-top: 20px;
 }
 
-.safety-pic2:hover{
+.safety-pic2:hover {
     transform: scale(1.1);
 }
 
-.safety-pic3{
+.safety-pic3 {
     width: 550px;
     height: 450px;
-    background-image:url('../images/safety-5.jpg.crdownload');
+    background-image: url('../images/safety-5.jpg.crdownload');
     background-repeat: no-repeat;
     clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
     background-size: 100% 100%;
     position: relative;
-    margin-top: 20px; 
+    margin-top: 20px;
 }
 
-.safety-pic3:hover{
+.safety-pic3:hover {
     transform: scale(1.1);
 }
 
-.safety-pic4{
+.safety-pic4 {
     width: 550px;
     height: 450px;
-    background-image:url('../images/SAFETY4.jpg');
+    background-image: url('../images/SAFETY4.jpg');
     background-repeat: no-repeat;
     clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
     background-size: 100% 100%;
     position: relative;
-    margin-top: 20px; 
+    margin-top: 20px;
 }
 
 
-.safety-pic4:hover{
+.safety-pic4:hover {
     transform: scale(1.1);
 }
 
-.safety-pic5:hover{
+.safety-pic5:hover {
     transform: scale(1.1);
 }
 
-.safety-pic5{
+.safety-pic5 {
     width: 550px;
     height: 450px;
-    background-image:url('../images/safety3.webp');
+    background-image: url('../images/safety3.webp');
     background-repeat: no-repeat;
     clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
     background-size: 100% 100%;
     position: relative;
-    margin-top: 20px; 
+    margin-top: 20px;
 }
-.safety-pic6{
+
+.safety-pic6 {
     width: 550px;
     height: 450px;
-    background-image:url('../images/safety2.jpeg');
+    background-image: url('../images/safety2.jpeg');
     background-repeat: no-repeat;
     clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
     background-size: 100% 100%;
     position: relative;
-    margin-top: 20px; 
+    margin-top: 20px;
 }
 
 
@@ -1593,30 +1686,30 @@ transform: scale(1.1);
 
 /***************************PROPERTY STRATS***********************/
 
-.property-header{
+.property-header {
     width: 100%;
     height: 100vh;
-    background-image:url('../images/property3.png');
+    background-image: url('../images/property3.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
     position: relative;
 }
 
-.property-pic{
-    width: 500px; 
-    height: 450px; 
-    background-image:url('../images/propert3.jpeg'); 
-    background-repeat: no-repeat; 
-    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%); 
-    background-size: 100% 100%; 
-    position: relative; 
-    margin-top: 20px; 
+.property-pic {
+    width: 500px;
+    height: 450px;
+    background-image: url('../images/propert3.jpeg');
+    background-repeat: no-repeat;
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+    background-size: 100% 100%;
+    position: relative;
+    margin-top: 20px;
 }
 
-.property-pic2{
+.property-pic2 {
     width: 500px;
     height: 550px;
-    background-image:url('../images/property1.webp');
+    background-image: url('../images/property1.webp');
     background-repeat: no-repeat;
     clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
     background-size: 100% 100%;
@@ -1625,61 +1718,61 @@ transform: scale(1.1);
 }
 
 
-.potos-property{
+.potos-property {}
 
-}
 /***************************PROPERTY END**********************/
 
 
 /**************************team STRATS***********************/
 
-.team-img{
+.team-img {
     background-image: url(../images/our-team1.jpg);
     width: 100%;
-    height:100vh;
+    height: 100vh;
     background-repeat: no-repeat;
-   background-size: cover;
-   
-}
-.banner-text{
-color: rgb(4, 4, 4);
-padding-top: 60px;
-padding-left: 20px;
+    background-size: cover;
+
 }
 
-.team-container{
+.banner-text {
+    color: rgb(4, 4, 4);
+    padding-top: 60px;
+    padding-left: 20px;
+}
+
+.team-container {
     margin: 0px;
     color: white;
     background-color: #12172b;
     padding: 0px;
 }
 
-#team-port:hover{
-color: white;
-font-weight: 400;
+#team-port:hover {
+    color: white;
+    font-weight: 400;
 }
 
-.team-heading{
+.team-heading {
     font-size: 60px;
     color: white;
 }
 
-.team-heading span{
+.team-heading span {
     font-style: italic;
     font-size: 30px;
 }
 
-.profiles{
+.profiles {
     display: flex;
     justify-content: center;
     margin: 20px 80px;
 }
 
-.profile{
+.profile {
     flex-basis: 260px;
 }
 
-.profile .profile-img{
+.profile .profile-img {
     height: 360px;
     width: 360px;
     border-radius: 50%;
@@ -1689,19 +1782,19 @@ font-weight: 400;
     padding-left: 25px;
 }
 
-.profile:hover .profile-img{
-  filter: grayscale(0);
+.profile:hover .profile-img {
+    filter: grayscale(0);
 }
 
-.user-name{
-margin-top: 30px;
-font-size: 16px;
-font-weight: 100;
+.user-name {
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 100;
 
-columns: #ccc;
+    columns: #ccc;
 }
 
-.profile p{
+.profile p {
     font-size: 16px;
     margin-top: 2px;
     text-align: justify;
@@ -1709,45 +1802,45 @@ columns: #ccc;
 
 
 @media only screen and (max-width:1150px) {
-    .profiles{
+    .profiles {
         flex-direction: column;
     }
 
-    .profile{
+    .profile {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    .profile p{
+    .profile p {
         text-align: center;
         margin: 20px 60px 80px 60px;
         font-size: 20px;
     }
 }
 
-@media only screen and (max-width:900px)  {
-    .heading{
-       font-size: 40px;
-       color: white;
-       text-align: center;
+@media only screen and (max-width:900px) {
+    .heading {
+        font-size: 40px;
+        color: white;
+        text-align: center;
     }
 
-    .heading span{
+    .heading span {
         font-size: 15px;
     }
 
-    .profile{
+    .profile {
         margin: 20px 0;
     }
 
-    .profile{
+    .profile {
         margin: 20px 10px 80px 10px;
     }
 }
 
 
-.middle-box{
+.middle-box {
     background-color: #ccc;
     color: red;
 
@@ -1759,9 +1852,9 @@ columns: #ccc;
 /***************************Square effect stars***********************/
 
 
-#circle{
+#circle {
     width: 200px;
-    height:200px;
+    height: 200px;
     border: 10px solid red;
     display: flex;
     justify-content: center;
@@ -1770,12 +1863,31 @@ columns: #ccc;
     animation: circle 2s infinity forwards;
 }
 
-@keyframes circle{
-    0%{border-color: red; transform: scale(1);}
-    25%{border-color: gold; transform: scale(1.1);}
-    50%{background-color: lime; scale: (1.3);}
-    75%{background-color: dodgerblue; scale: (1.1);}
-    100%{border-color: purple;transform: scale(1);}
+@keyframes circle {
+    0% {
+        border-color: red;
+        transform: scale(1);
+    }
+
+    25% {
+        border-color: gold;
+        transform: scale(1.1);
+    }
+
+    50% {
+        background-color: lime;
+        scale: (1.3);
+    }
+
+    75% {
+        background-color: dodgerblue;
+        scale: (1.1);
+    }
+
+    100% {
+        border-color: purple;
+        transform: scale(1);
+    }
 }
 
 /***************************Square effevts end***********************/
@@ -1783,43 +1895,45 @@ columns: #ccc;
 
 /****media query*****/
 
-@media(max-width: 768px){
+@media(max-width: 768px) {
     .vav-item {
-        text-align: center!important;
+        text-align: center !important;
     }
 
-    .pricing, .happyclients .contactus .newsletter{
+    .pricing,
+    .happyclients .contactus .newsletter {
         height: auto;
         margin-top: 50px;
 
     }
-    .card-second{
+
+    .card-second {
         transform: translateY(0px);
-        margin:30px;
+        margin: 30px;
     }
-   
-    #newsletterid{
+
+    #newsletterid {
         margin-top: 30px;
-        
+
     }
-    #footerdiv{
-       margin-top: 30px;
+
+    #footerdiv {
+        margin-top: 30px;
     }
 }
 
-@media only screen and (min-width: 377px) and (max-width:667px){
-.section-cardStats{
-    width: 100%;
-}
-.section-cards{
-    width: 100%;
-}
+@media only screen and (min-width: 377px) and (max-width:667px) {
+    .section-cardStats {
+        width: 100%;
+    }
+
+    .section-cards {
+        width: 100%;
+    }
 }
 
 @media (max-width: 800px) {
-    .section-cardStats{
-      flex-direction: column;
+    .section-cardStats {
+        flex-direction: column;
     }
-  }
-
-
+}
