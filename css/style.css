@@ -18,12 +18,17 @@ li {
 }
 
 a:hover {
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 
 body {
     z-index: 1 !important;
+}
+
+p{
+    word-break: break-all;
+    justify-content: stretch;
 }
 
 /************************NAVBAR-STARTS**********************************/
@@ -256,6 +261,13 @@ carusel-img {
 .servicediv i {
     color: white;
 }
+.services .card-title{
+    color: #063970;
+}
+.services .card{
+    border: 0px;
+}
+
 
 /*service offer css end*/
 
@@ -374,6 +386,7 @@ carusel-img {
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
     border-radius: 2px;
     transition: 0.3s ease;
+    margin: 10px;
 }
 
 
@@ -408,13 +421,17 @@ carusel-img {
     font-weight: 400;
     color: #000;
 
-}
+}   
 
 /*pricing  css end*/
 
 /*contact us  css strats*/
 .contactus {
     margin-top: 0px;
+}
+.form-contact input, .form-contact textarea{
+   background-color: rgb(255, 255, 255);
+   border: 2px solid #00004d73;
 }
 
 .contactus {
@@ -559,11 +576,14 @@ carusel-img {
 .container-ser .box-ser {
     position: relative;
     width: 320px;
+    margin: 15px;
     background: #fff;
     padding: 100px 40px 60px;
     box-shadow: 0 15px 45px rgba(0, 0, 0, .1);
 }
-
+.container-ser .box-ser p :hover{
+    color: white !important;
+}
 .container-ser .box-ser::before {
     content: "";
     position: absolute;
@@ -571,7 +591,7 @@ carusel-img {
     left: 0;
     width: 100%;
     height: 100%;
-    background: #ff226d;
+    background: #063970;
     transform: scaleY(0);
     transform-origin: top;
     transition: transform 0.5s;
@@ -586,7 +606,7 @@ carusel-img {
 .container-ser .box-ser h2 {
     position: absolute;
     left: 40px;
-    top: 60px;
+    top: 42px;
     font-size: 4rem;
     font-family: sans-serif;
     font-weight: 800;
@@ -619,7 +639,7 @@ carusel-img {
 
 .container-ser .box-ser:hover h3,
 .container-ser .box-ser:hover p {
-    color: #fff;
+    color: #fff !important;
 }
 
 /****************service end********************/
@@ -685,12 +705,12 @@ carusel-img {
 
 /****************contact us stars********************/
 
-.contactus-img {
+/* .contactus-img {
     background-image: url(../images/contact-us6.PNG);
     width: 100%;
     height: 100vh;
     background-repeat: no-repeat;
-}
+} */
 
 /****************contact us ends********************/
 
@@ -705,11 +725,8 @@ contactus-img
     font-weight: 700;
 }
 
-#About-para:hover {
-    margin-top: 50px;
-    padding-left: 40px;
-    font-weight: 900;
-    border-bottom: 1px solid blue;
+.about-heading{
+    color: #063970;
 }
 
 .containerAbout {
@@ -1725,7 +1742,7 @@ contactus-img
 
 /**************************team STRATS***********************/
 
-.team-img {
+/* .team-img {
     background-image: url(../images/our-team1.jpg);
     width: 100%;
     height: 100vh;
@@ -1837,14 +1854,151 @@ contactus-img
     .profile {
         margin: 20px 10px 80px 10px;
     }
+} */
+.h1{
+    text-align: center;
+    padding: 20px;
+}
+.banner-text{
+color: rgb(4, 4, 4);
+padding-top: 60px;
+padding-left: 20px;
+}
+
+.team-container{
+    margin: 0px;
+    color: rgb(255, 255, 255);
+    background-color: #12172b;
+    padding: 0px;
+}
+
+#team-port{
+color: rgb(255, 255, 255);
+font-weight: 400;
+margin-top: 5px;
+}
+
+.team-heading{
+    font-size: 60px;
+    color: rgb(14, 49, 94);
+    margin: 5px 0px;
+}
+
+.team-heading span{
+    font-style: italic;
+    font-size: 30px;
+}
+
+.profiles{
+    display: flex;
+    justify-content: center;
+    margin: 20px 80px;
+}
+
+.profile{
+    flex-basis: 260px;
+}
+
+.profile .profile-img{
+    height: 360px;
+    width: 360px;
+    margin-left: 15px;
+    
+    cursor: pointer;
+    transition: 400ms;
+    padding-left: 25px;
+}
+
+.profile:hover .profile-img{
+        --g: 4px;     /* the gap */
+        --b: 12px;    /* border thickness*/
+        --c: #ffffff; /* the color */
+        
+        
+        padding: calc(var(--g) + var(--b));
+        --_c: #0000 0 25%, var(--c) 0 50%;
+        --_g1: repeating-linear-gradient(90deg ,var(--_c)) repeat-x;
+        --_g2: repeating-linear-gradient(180deg,var(--_c)) repeat-y;
+        background:
+          var(--_g1) var(--_p, 25%) 0   ,var(--_g2) 0    var(--_p,125%),
+          var(--_g1) var(--_p,125%) 100%,var(--_g2) 100% var(--_p, 25%);
+        background-size: 200% var(--b),var(--b) 200%;
+        cursor: pointer;
+        filter: grayscale(50%);
+        transition: .3s;
+      }
+      img:hover {
+        --_p: 75%;
+        filter: grayscale(0%);
+      }
+      
+     
+
+.user-name{
+margin-top: 30px;
+font-size: 16px;
+font-weight: 100;
+
+columns: rgb(13, 35, 109);
+}
+
+.profile p{
+    font-size: 16px;
+    margin-top: 2px;
+    text-align: justify;
 }
 
 
-.middle-box {
-    background-color: #ccc;
+@media only screen and (max-width:1150px) {
+    .profiles{
+        flex-direction: column;
+    }
+
+    .profile{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile p{
+        text-align: center;
+        margin: 20px 60px 80px 60px;
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width:900px)  {
+    .heading{
+       font-size: 40px;
+       color: rgb(12, 14, 121);
+       text-align: center;
+    }
+
+    .heading span{
+        font-size: 15px;
+    }
+
+    .profile{
+        margin: 20px 0;
+    }
+
+    .profile{
+        margin: 20px 10px 80px 10px;
+    }
+}
+
+
+.middle-box{
+    background-color:rgb(255, 255, 255);
+    color: black(17, 2, 107);
+
+}
+
+/* .middle-box {
+    background-color: rgb(80, 74, 74);
     color: red;
 
-}
+} */
 
 /***************************team endS***********************/
 
