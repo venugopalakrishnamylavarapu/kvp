@@ -7,7 +7,7 @@
 }
 
 a {
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 li {
@@ -818,7 +818,7 @@ contactus-img
 /***************************SMART CLEANING STARTS**********************/
 
 .smart-pic1 {
-    width: 500px;
+    width: 300px;
     height: 400px;
     padding-left: 5px;
     clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
@@ -848,7 +848,7 @@ contactus-img
 }
 
 .smart-pic {
-    width: 500px;
+    width: 300px;
     height: 400px;
     margin-bottom: 15px;
     clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
@@ -860,7 +860,7 @@ contactus-img
 @media (min-width:590px) and (max-width:900px) {
     .smart-pic1,
     .smart-pic {
-        margin-top: 150px;
+        margin:auto;
     }
 }
 
@@ -880,7 +880,7 @@ contactus-img
 }
 
 .eng-pic {
-    width: 500px;
+    width: 300px;
     height: 400px;
     padding-left: 25px;
     background-image: url('../images/ene-2.webp');
@@ -893,7 +893,7 @@ contactus-img
 
 @media screen and (min-width:580px) and (max-width:990px) {
     .engineer-pic {
-        margin-top: 125px;
+       margin: auto;
     }
 }
 
@@ -913,8 +913,8 @@ contactus-img
 }
 
 .plant-pic {
-    width: 500px;
-    height: 450px;
+    width: 300px;
+    height: auto;
     clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
     background-size: 100% 100%;
     position: relative;
@@ -923,7 +923,7 @@ contactus-img
 
 .plant-pic2 {
     width: 250px;
-    height: 450px;
+    height: auto;
     clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
     position: relative;
     margin-top: 120px;
@@ -960,7 +960,7 @@ contactus-img
 }
 
 .green-pic {
-    width: 500px;
+    width: 300px;
     height: auto;
     position: relative;
     margin-top: 20px;
@@ -989,8 +989,8 @@ contactus-img
 }
 
 .dis-pic {
-    width: 500px;
-    height: 450px;
+    width: 300px;
+    height: auto;
     clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
     background-size: 100% 100%;
     position: relative;
@@ -1035,7 +1035,7 @@ contactus-img
 }
 
 .ground-pic {
-    width: 500px;
+    width: 300px;
     height: auto;
     clip-path: polygon(25% 0%, 100% 0, 75% 100%, 0% 100%);
     background-size: 100% 50%;
@@ -1100,8 +1100,8 @@ contactus-img
 }
 
 .pest-pic {
-    width: 500px;
-    height: 450px;
+    width: 300px;
+    height: auto;
     background-image: url('../images/pest2.webp');
     background-repeat: no-repeat;
     clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
@@ -1141,8 +1141,8 @@ contactus-img
 }
 
 .security-pic {
-    width: 500px;
-    height: 450px;
+    width: 300px;
+    height: auto;
     clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
     background-size: 100% 100%;
     position: relative;
@@ -1167,7 +1167,7 @@ contactus-img
 }
 
 .mail-pic {
-    width: 500px;
+    width: 300px;
     height: auto;
     clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
     background-size: 100% 100%;
@@ -1180,8 +1180,8 @@ contactus-img
 }
 
 .mail-pic2 {
-    width: 500px;
-    height: 450px;
+    width: 300px;
+    height: auto;
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
     background-size: 100% 100%;
     position: relative;
@@ -1204,8 +1204,8 @@ contactus-img
 }
 
 .facade-pic {
-    width: 500px;
-    height: 450px;
+    width: 300px;
+    height: auto;
     clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
     background-size: 100% 100%;
     position: relative;
@@ -1213,8 +1213,8 @@ contactus-img
 }
 
 .facade-pic2 {
-    width: 500px;
-    height: 450px;
+    width: 300px;
+    height: auto;
     clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
     background-size: 100% 100%;
     position: relative;
@@ -1237,8 +1237,8 @@ contactus-img
 }
 
 .pantry-pic {
-    width: 500px;
-    height: 450px;
+    width: 300px;
+    height: auto;
     clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
     background-size: 100% 100%;
     position: relative;
@@ -1246,8 +1246,8 @@ contactus-img
 }
 
 .pantry-pic2 {
-    width: 500px;
-    height: 450px;
+    width: 300px;
+    height: auto;
     clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
     background-size: 100% 100%;
     position: relative;
@@ -1293,7 +1293,7 @@ contactus-img
 }
 
 .waste-pic {
-    width: 550px;
+    width: 300px;
     height: 550px;
     clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
     background-size: 100% 100%;
@@ -1302,8 +1302,8 @@ contactus-img
 }
 
 .waste-pic2 {
-    width: 500px;
-    height: 450px;
+    width: 300px;
+    height: auto;
     clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
     background-size: 100% 100%;
     position: relative;
@@ -1352,7 +1352,7 @@ contactus-img
 }
 
 .guest-pic {
-    width: 550px;
+    width: 300px;
     height: 550px;
     clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
     background-size: 100% 100%;
@@ -1361,8 +1361,8 @@ contactus-img
 }
 
 .guest-pic2 {
-    width: 500px;
-    height: 450px;
+    width: 300px;
+    height: auto;
     background-image: url('../images/guest-house2.webp');
     background-repeat: no-repeat;
     clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
@@ -1392,8 +1392,8 @@ contactus-img
 /***************************EMERGENCY  STRATS***********************/
 
 .emergency-pic {
-    width: 550px;
-    height: 450px;
+    width: 300px;
+    height: auto;
     clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
     background-size: 100% 100%;
     position: relative;
@@ -1401,8 +1401,8 @@ contactus-img
 }
 
 .emergency-pic2 {
-    width: 500px;
-    height: 450px;
+    width: 300px;
+    height: auto;
     clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
     background-size: 100% 100%;
     position: relative;
@@ -1444,8 +1444,8 @@ contactus-img
 }
 
 .repair-pic {
-    width: 550px;
-    height: 450px;
+    width: 300px;
+    height: auto;
     clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
     background-size: 100% 100%;
     position: relative;
@@ -1453,8 +1453,8 @@ contactus-img
 }
 
 .repair-pic2 {
-    width: 500px;
-    height: 450px;
+    width: 300px;
+    height: auto;
     clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
     background-size: 100% 100%;
     position: relative;
@@ -1484,8 +1484,8 @@ contactus-img
 }
 
 .ITequipment-pic1 {
-    width: 550px;
-    height: 450px;
+    width: 300px;
+    height: auto;
     clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
     background-size: 100% 100%;
     position: relative;
@@ -1493,8 +1493,8 @@ contactus-img
 }
 
 .ITequipment-pic2 {
-    width: 500px;
-    height: 450px;
+    width: 300px;
+    height: auto;
     clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
     background-size: 100% 100%;
     position: relative;
@@ -1502,8 +1502,8 @@ contactus-img
 }
 
 .ITequipment-pic3 {
-    width: 500px;
-    height: 450px;
+    width: 300px;
+    height: auto;
     clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
     background-size: 100% 100%;
     position: relative;
@@ -1533,8 +1533,8 @@ contactus-img
 }
 
 .safety-pic {
-    width: 550px;
-    height: 450px;
+    width: 300px;
+    height: auto;
     clip-path: circle(50% at 50% 50%);
     background-size: 100% 100%;
     position: relative;
@@ -1542,8 +1542,8 @@ contactus-img
 }
 
 .safety-pic2 {
-    width: 500px;
-    height: 450px;
+    width: 300px;
+    height: auto;
     background-image: url('../images/safety1.jpg');
     background-repeat: no-repeat;
     clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
@@ -1553,8 +1553,8 @@ contactus-img
 }
 
 .safety-pic3 {
-    width: 550px;
-    height: 450px;
+    width: 300px;
+    height: auto;
     clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
     background-size: 100% 100%;
     position: relative;
@@ -1562,8 +1562,8 @@ contactus-img
 }
 
 .safety-pic4 {
-    width: 550px;
-    height: 450px;
+    width: 300px;
+    height: auto;
     background-image: url('../images/SAFETY4.jpg');
     background-repeat: no-repeat;
     clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
@@ -1573,8 +1573,8 @@ contactus-img
 }
 
 .safety-pic5 {
-    width: 550px;
-    height: 450px;
+    width: 300px;
+    height: auto;
     clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
     background-size: 100% 100%;
     position: relative;
@@ -1582,8 +1582,8 @@ contactus-img
 }
 
 .safety-pic6 {
-    width: 550px;
-    height: 450px;
+    width: 300px;
+    height: auto;
     clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
     background-size: 100% 100%;
     position: relative;
@@ -1606,8 +1606,8 @@ contactus-img
 }
 
 .property-pic {
-    width: 500px;
-    height: 450px;
+    width: 300px;
+    height: auto;
     clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
     background-size: 100% 100%;
     position: relative;
@@ -1615,7 +1615,7 @@ contactus-img
 }
 
 .property-pic2 {
-    width: 500px;
+    width: 300px;
     height: 550px;
     background-image: url('../images/property1.webp');
     background-repeat: no-repeat;
@@ -1625,9 +1625,7 @@ contactus-img
     margin-top: 80px;
 }
 
-#section-row h3 center {
-    padding-right: 175px;
-}
+
 
 
 /***************************PROPERTY END**********************/
