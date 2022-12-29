@@ -2,7 +2,7 @@
 const homeHeaderHTML = `
 <div class="headerr position-relative">
     <div class="fixed-top header-color">
-        <nav class="navbar navbar-expand-lg navbar-light container p-0">
+        <nav class="navbar navbar-expand-lg navbar-light container my-0 p-0">
             <a class="navbar-brand ms-2 text-white" href="index.html"><img src="./images/KVSRP Logo (002).png" style="width:40px"alt="logo"></a>
             <span class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
             <i class="fa fa-bars text-white" aria-hidden="true"></i>   
@@ -116,7 +116,7 @@ const footerHTML = `  <div class="container">
 
 const gnHeaderHTML = `<div class="menu-bar sticky-top">
 <div class="fixed-top header-color">
-  <nav class="navbar navbar-expand-lg navbar-light container">
+  <nav class="navbar navbar-expand-lg navbar-light my-0 container">
     <a class="navbar-brand ms-2 text-white" href="index.html"><img src="./images/KVSRP Logo (002).png" alt="logo" style="width: 40px;"></a>
     <span class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav"
       aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
