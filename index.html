@@ -27,7 +27,6 @@
     <!--fontawesom cdn links-->
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 
-
 </head>
 
 <body>
@@ -35,52 +34,22 @@
 
     <!-------------------------NAV BAR STARATS----------------------------->
     <header>
-        <div class="headerr ">
-            <div class="menu-bar sticky-top">
-                <div class="fixed-top header-color">
-                    <nav class="navbar navbar-expand-lg navbar-light container">
-                        <a class="navbar-brand ms-2 text-white" href="index.html">KVSRP</a>
-                        <span class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-                        </span>
-                        <div class="collapse navbar-collapse" id="navbarNav">
-                            <ul class="navbar-nav ml-auto">
-                                <li class="nav-item active ">
-                                    <a class="nav-link" href="index.html">HOME </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="about.html">ABOUT</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="service.html">SERVICES</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="team.html">TEAM</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link " href="contact.html">CONTACT</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </nav>
-                </div>
-            </div>
-
-
-            <div class="header-content">
-                <div class="cen-div">
-                    <h1>KVSRP ENTERPRISES</h1>
-                    <h6>Quality Meets Excellence</h6>
-
-                </div>
-            </div>
+        <div id="headerHome">
+        
         </div>
     </header>
 
 
     <!-------------------------NAV BAR ENDS----------------------------->
 
-
+<!-- <div class="header-content">
+    <div class="card" style="width: 18rem;">
+        <img src="./images/homeBanner.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+</div> -->
 
 
 
@@ -103,7 +72,7 @@
     <section class="serviceoffers" id="servicediv" style="margin-top:20px ;">
         <div class="container headings text-center">
             <h3 class="text-center text-white">WE ARE PROVIDE SERVICES</h3>
-            <p class="text-center" style="color:rgb(0, 0, 0)">KVSRP we are provides all types of servrcies</p>
+            <p class="text-center serviceoffers-para" >KVSRP we are provides all types of servrcies</p>
         </div>
 
         <div class="container">
@@ -205,7 +174,7 @@
     <!--our servrcies starts-->
 
 
-    <section class="happyclients" id="">
+    <section class="happyclients container" id="" >
         <div class="container headings text-center">
             <h1 class="text-center font-weight-bold">OUR CLIENTS</h1>
             <!-- <p>KVSRP CLIENTS</p> -->
@@ -226,7 +195,7 @@
                     <div class="row">
                         <div class="col-lg-4 col-md-4 col-12">
                             <div class="box">
-                                <a href="#"><img style="width:100% ; height:100px" src="./images/cbre.png" alt=""></a>
+                                <a href="#"><img  src="./images/cbre.png" alt=""></a>
                                 <h1>CBRE</h1>
                             </div>
                         </div>
@@ -367,25 +336,40 @@
         </div>
 
         <div class="container d-flex justify-content-around align-items-center text-center">
-            <div>
-                <h1 class="count">30</h1>
-                <p>Complated</p>
-            </div>
+            <div class="row w-100">
+                <div class="col-md-3 col-sm-6 col-6">
+                    <div >
+                        <h1 class="count">30</h1>
+                        <p class="text-center">Complated</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-6">
+                    <div>
+                        <h1 class="count">5</h1>
+                        <p class="text-center">Awards Won</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-6">
+                    <div>
+                        <h1 class="count">18</h1>
+                        <p class="text-center">Happy Clients</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-6">
+                    <div>
+                        <h1 class="count">25</h1>
+                        <p class="text-center">Working On</p>
+                    </div>
+                </div>
 
-            <div>
-                <h1 class="count">5</h1>
-                <p>Awards Won</p>
             </div>
+            
 
-            <div>
-                <h1 class="count">18</h1>
-                <p>Happy Clients</p>
-            </div>
+            
 
-            <div>
-                <h1 class="count">25</h1>
-                <p>Working On</p>
-            </div>
+           
+
+           
 
         </div>
     </section>
@@ -394,54 +378,7 @@
 
     <!--footer starts-->
     <footer class="footersection" id="footerdiv">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-md-12 d-md-block my-auto col-12 footer-div">
-                    <div class=" d-flex justify-content-center">
-                        <h1 id="calibri" class="text-white m-3 p-3">KVSRP</h1>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-12  d-flex justify-content-center footer-div">
-                    <div class="">
-                        <h3 id="calibri" class="text-white">COMPANY</h3>
-                        <ul id="calibri-body">
-                            <li><a class="text-white" href="index.html">Home</a></li>
-                            <li><a class="text-white" href="about.html">About Us</a></li>
-                            <li><a class="text-white" href="service.html">Service</a></li>
-                            <li><a class="text-white" href="team.html">team</a></li>
-                            <li><a class="text-white" href="contact.html">Contact Us</a></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 col-12  d-flex justify-content-center footer-div">
-                    <div>
-                        <h3 id="calibri" class="text-white">LINKS</h3>
-                        <div class="links">
-                            <ul class="row">
-                                <li class="d-inline m-1 p-1 text-white col-3"><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
-                                <li class="d-inline m-1 p-1 text-white col-3"><a href="#"><i class="fa fa-phone" aria-hidden="true"></i></a></li>
-                                <li class="d-inline m-1 p-1 text-white col-3"><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                <li class="d-inline m-1 p-1 text-white col-3"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                <li class="d-inline m-1 p-1 text-white col-3"><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                                <li class="d-inline m-1 p-1 text-white col-3"><a href="#"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="text-center  m-3">
-                <p class="text-white d-inline">Copyright @2022 all right reserved | this site made by KVSRP</p>
-            </div>
-
-            <div class="scrolltop float-right">
-                <i class="fa fa-arrow-up bg-dark" onclick="topfunction()" id="myBtn"></i>
-            </div>
-
-        </div>
+       
 
     </footer>
     <!--footer end-->
@@ -470,6 +407,7 @@
         })
     </script>
     <!--script ends-->
+    <script src="./js_File/KVSRP.js"></script>
 
 </body>
 

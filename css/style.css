@@ -44,12 +44,12 @@ p {
 .nav-link {
     font-size: 16px;
     margin: 3px;
+    padding-bottom: 1px;
     color: #fff !important;
-    /* font-weight: 500; */
-    display:inline-block;
-    text-align:center;
-    /* font: normal 16px Arial; */
-    text-transform: uppercase;
+    font-weight: 500;
+}
+header .navbar{
+    padding: 0px;
 }
 
 .navbar-nav {
@@ -59,6 +59,7 @@ p {
 
 .menu-bar .navbar-brand {
     color: white !important;
+    margin-left: 10px;
 }
 
 .menu-bar .navbar-toggler {
@@ -71,25 +72,34 @@ p {
     color: white;
     font-size: 26px;
 }
-.nav-item{
-    display: inline-block;
+.navbar-nav .nav-link {
     
+    padding: 14px 0px;
+   
+
 }
-.nav-link:hover {
-    font-weight: bold;
-    /* padding: auto 7px; */
+.nav-item:hover {
+   border-bottom: 3px solid #ff9595;
 }
-.nav-link::before{
-    display: block;
-    /* content: attr(title); */
-    font-weight: bold;
-    height: 0;
-    overflow: hidden;
-    visibility: hidden;
+.nav-item{
+    border-bottom: 3px solid #063970;
+}
+
+@media (max-width: 991.98px){
+    .navbar-nav .nav-link {
+        padding: 2px 0px !important;
+    }
+    .nav-item:hover {
+        border-bottom: none;
+        color: #ff9595 !important;
+     }
+     .nav-item{
+         border-bottom: none;
+     }
 }
 
 @media only screen and(max-width:100px) {
-    .nav-link:hover {
+    .nav-item:hover {
         border-bottom: none !important;
     }
 }
@@ -101,12 +111,10 @@ p {
     color: #606060;
 }
 
-#para1 {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    font-weight: 400;
+#para1 ,.para1 li{
     color: #606060;
-    padding: 5px;
+    text-align: justify !important;
+    font-size: 1.1rem !important;
 }
 
 #para2 {
@@ -138,11 +146,10 @@ p {
 .headerr {
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(#ffffff24, #3f51b5), url(../images/bg-1.jpg);
+    background-image: linear-gradient(#ffffff24, #3f51b5), url(../images/homeBanner.jpg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     position: relative;
-    z-index: 100 !important;
 }
 
 
@@ -183,6 +190,8 @@ p {
     width: 100%;
     height: 100vh;
     color: white;
+    top: 0%;
+    z-index: 100;
     text-align: center;
     position: relative;
 }
@@ -256,7 +265,7 @@ carusel-img {
     color: white;
 }
 
-.servicediv p {
+.servicediv p,.serviceoffers-para {
     color: rgb(194, 194, 194) !important;
 }
 
@@ -278,9 +287,7 @@ carusel-img {
 
 /*awards starts css */
 
-.project-work {
-    margin: 100px 0;
-}
+
 
 .project-work h1 {
     font-size: 2rem;
@@ -386,8 +393,8 @@ carusel-img {
 
 .box {
     text-align: center;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+    /* border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3); */
     border-radius: 2px;
     transition: 0.3s ease;
     margin: 10px;
@@ -474,7 +481,7 @@ carusel-img {
 }
 
 .form-button button:hover {
-    color: #063906;
+    color: #063970;
     background-color: white;
 }
 
@@ -495,14 +502,18 @@ carusel-img {
 
 .footersection p {
     color: #fff;
+    line-height: 1.4;
+    font-size: 1rem !important;
 }
 
 .links a i {
     font-size: medium;
 }
 
-.links a i:hover {
-    font-weight: bold;
+.links li:hover a i{
+color: #ff9595;}
+.links li a i {
+    font-size: 18px;
 }
 
 .footersection li a {
@@ -514,9 +525,15 @@ carusel-img {
     text-align: center;
     text-decoration: none;
 }
-
-.footersection li a:hover {
-    font-weight: bold;
+ #calibro-body li:hover  #calibro-body li a{
+    font-weight: bold !important;
+}
+#calibri-body li:hover a{
+    color: #ff9595 !important;
+    letter-spacing: 0;
+}
+footer div p{
+    display: inline !important;
 }
 
 .newsletter {
@@ -740,14 +757,13 @@ contactus-img
     padding: 0 8%;
 }
 
-.about-header {
-    width: 100%;
-    height: 100vh;
-    background-image: url('../images/abouttt.avif');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    position: relative;
+.about-header{
+    /* min-height: 50vh; */
+    margin-top: 38px;
+    overflow: hidden;
+    max-height: 100vh;
 }
+
 
 .containerAbout h1 {
     text-align: center;
@@ -836,7 +852,7 @@ contactus-img
 /***************************SMART CLEANING STARTS**********************/
 
 .smart-pic1 {
-    width: 300px;
+    width: 400px;
     height: 400px;
     padding-left: 5px;
     clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
@@ -866,7 +882,7 @@ contactus-img
 }
 
 .smart-pic {
-    width: 300px;
+    width: 400px;
     height: 400px;
     margin-bottom: 15px;
     clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
@@ -898,7 +914,7 @@ contactus-img
 }
 
 .eng-pic {
-    width: 300px;
+    width: 400px;
     height: 400px;
     padding-left: 25px;
     background-image: url('../images/ene-2.webp');
@@ -909,6 +925,14 @@ contactus-img
     margin-top: 20px;
 }
 
+.smart-text{
+    color: #063970; font-weight: 800;font-size: 75px;
+}
+@media (max-width:576px){
+    .smart-text{
+        font-size: 30px;
+    }
+}
 @media screen and (min-width:580px) and (max-width:990px) {
     .engineer-pic {
        margin: auto;
@@ -931,7 +955,7 @@ contactus-img
 }
 
 .plant-pic {
-    width: 300px;
+    width: 400px;
     height: auto;
     clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
     background-size: 100% 100%;
@@ -944,9 +968,7 @@ contactus-img
     height: auto;
     clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
     position: relative;
-    margin-top: 120px;
-    margin-bottom: 55px;
-    margin-left: 50px;
+
 }
 
 @media screen and (max-width:570px) {
@@ -978,7 +1000,7 @@ contactus-img
 }
 
 .green-pic {
-    width: 300px;
+    width: 400px;
     height: auto;
     position: relative;
     margin-top: 20px;
@@ -1007,7 +1029,7 @@ contactus-img
 }
 
 .dis-pic {
-    width: 300px;
+    width: 400px;
     height: auto;
     clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
     background-size: 100% 100%;
@@ -1023,11 +1045,7 @@ contactus-img
     padding-left: 50px;
 }
 
-@media screen and (min-width:100px) {
-    #para1 {
-        margin-top: 75px;
-    }
-}
+
 
 
 /***************************DISINFECTION AND SANITIZATION END***********************/
@@ -1053,7 +1071,7 @@ contactus-img
 }
 
 .ground-pic {
-    width: 300px;
+    width: 400px;
     height: auto;
     clip-path: polygon(25% 0%, 100% 0, 75% 100%, 0% 100%);
     background-size: 100% 50%;
@@ -1118,7 +1136,7 @@ contactus-img
 }
 
 .pest-pic {
-    width: 300px;
+    width: 400px;
     height: auto;
     background-image: url('../images/pest2.webp');
     background-repeat: no-repeat;
@@ -1159,7 +1177,7 @@ contactus-img
 }
 
 .security-pic {
-    width: 300px;
+    width: 400px;
     height: auto;
     clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
     background-size: 100% 100%;
@@ -1185,7 +1203,7 @@ contactus-img
 }
 
 .mail-pic {
-    width: 300px;
+    width: 400px;
     height: auto;
     clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
     background-size: 100% 100%;
@@ -1198,7 +1216,7 @@ contactus-img
 }
 
 .mail-pic2 {
-    width: 300px;
+    width: 400px;
     height: auto;
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
     background-size: 100% 100%;
@@ -1222,7 +1240,7 @@ contactus-img
 }
 
 .facade-pic {
-    width: 300px;
+    width: 400px;
     height: auto;
     clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
     background-size: 100% 100%;
@@ -1231,7 +1249,7 @@ contactus-img
 }
 
 .facade-pic2 {
-    width: 300px;
+    width: 400px;
     height: auto;
     clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
     background-size: 100% 100%;
@@ -1255,7 +1273,7 @@ contactus-img
 }
 
 .pantry-pic {
-    width: 300px;
+    width: 400px;
     height: auto;
     clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
     background-size: 100% 100%;
@@ -1264,7 +1282,7 @@ contactus-img
 }
 
 .pantry-pic2 {
-    width: 300px;
+    width: 400px;
     height: auto;
     clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
     background-size: 100% 100%;
@@ -1311,7 +1329,7 @@ contactus-img
 }
 
 .waste-pic {
-    width: 300px;
+    width: 400px;
     height: 550px;
     clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
     background-size: 100% 100%;
@@ -1320,7 +1338,7 @@ contactus-img
 }
 
 .waste-pic2 {
-    width: 300px;
+    width: 400px;
     height: auto;
     clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
     background-size: 100% 100%;
@@ -1370,7 +1388,7 @@ contactus-img
 }
 
 .guest-pic {
-    width: 300px;
+    width: 400px;
     height: 550px;
     clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
     background-size: 100% 100%;
@@ -1379,7 +1397,7 @@ contactus-img
 }
 
 .guest-pic2 {
-    width: 300px;
+    width: 400px;
     height: auto;
     background-image: url('../images/guest-house2.webp');
     background-repeat: no-repeat;
@@ -1410,7 +1428,7 @@ contactus-img
 /***************************EMERGENCY  STRATS***********************/
 
 .emergency-pic {
-    width: 300px;
+    width: 400px;
     height: auto;
     clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
     background-size: 100% 100%;
@@ -1419,7 +1437,7 @@ contactus-img
 }
 
 .emergency-pic2 {
-    width: 300px;
+    width: 400px;
     height: auto;
     clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
     background-size: 100% 100%;
@@ -1462,7 +1480,7 @@ contactus-img
 }
 
 .repair-pic {
-    width: 300px;
+    width: 400px;
     height: auto;
     clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
     background-size: 100% 100%;
@@ -1471,7 +1489,7 @@ contactus-img
 }
 
 .repair-pic2 {
-    width: 300px;
+    width: 400px;
     height: auto;
     clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
     background-size: 100% 100%;
@@ -1502,7 +1520,7 @@ contactus-img
 }
 
 .ITequipment-pic1 {
-    width: 300px;
+    width: 400px;
     height: auto;
     clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
     background-size: 100% 100%;
@@ -1511,7 +1529,7 @@ contactus-img
 }
 
 .ITequipment-pic2 {
-    width: 300px;
+    width: 400px;
     height: auto;
     clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
     background-size: 100% 100%;
@@ -1520,7 +1538,7 @@ contactus-img
 }
 
 .ITequipment-pic3 {
-    width: 300px;
+    width: 400px;
     height: auto;
     clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
     background-size: 100% 100%;
@@ -1551,7 +1569,7 @@ contactus-img
 }
 
 .safety-pic {
-    width: 300px;
+    width: 400px;
     height: auto;
     clip-path: circle(50% at 50% 50%);
     background-size: 100% 100%;
@@ -1560,7 +1578,7 @@ contactus-img
 }
 
 .safety-pic2 {
-    width: 300px;
+    width: 400px;
     height: auto;
     background-image: url('../images/safety1.jpg');
     background-repeat: no-repeat;
@@ -1571,7 +1589,7 @@ contactus-img
 }
 
 .safety-pic3 {
-    width: 300px;
+    width: 400px;
     height: auto;
     clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
     background-size: 100% 100%;
@@ -1580,7 +1598,7 @@ contactus-img
 }
 
 .safety-pic4 {
-    width: 300px;
+    width: 400px;
     height: auto;
     background-image: url('../images/SAFETY4.jpg');
     background-repeat: no-repeat;
@@ -1591,7 +1609,7 @@ contactus-img
 }
 
 .safety-pic5 {
-    width: 300px;
+    width: 400px;
     height: auto;
     clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
     background-size: 100% 100%;
@@ -1600,7 +1618,7 @@ contactus-img
 }
 
 .safety-pic6 {
-    width: 300px;
+    width: 400px;
     height: auto;
     clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
     background-size: 100% 100%;
@@ -1624,7 +1642,7 @@ contactus-img
 }
 
 .property-pic {
-    width: 300px;
+    width: 400px;
     height: auto;
     clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
     background-size: 100% 100%;
@@ -1633,7 +1651,7 @@ contactus-img
 }
 
 .property-pic2 {
-    width: 300px;
+    width: 400px;
     height: 550px;
     background-image: url('../images/property1.webp');
     background-repeat: no-repeat;
