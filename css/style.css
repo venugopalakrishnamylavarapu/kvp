@@ -1,9 +1,9 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;1,600&family=Poppins:wght@200;400&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;1,600&family=Poppins:wght@200;400&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif ;
+    font-family: sans-serif;
 }
 
 a {
@@ -23,10 +23,8 @@ body {
 }
 
 p {
-    /* word-break: break-all; */
-    text-align: justify !important;
-    font-size: 1.1rem !important;
-
+    word-break: break-all;
+    justify-content: stretch;
 }
 
 
@@ -449,7 +447,8 @@ carusel-img {
 .contactus {
     background-repeat: no-repeat;
     width: 100%;
-    padding: 60px 0;
+    height: 100vh;
+    padding: 8px 0;
     position: relative;
 }
 
@@ -466,15 +465,13 @@ carusel-img {
 }
 
 .form-button button {
-    
+    border: 1px solid #ffffff;
     border-radius: 100px;
     margin: 0 5px;
     padding: 12px 35px;
     outline: none;
-    
-    font-size: 1rem;
     color: #ffffff;
-    border: 1px solid #ffffff;
+    font-size: 1rem;
     font-weight: 600;
     line-height: 1.4;
     text-align: center;
@@ -559,11 +556,11 @@ footer div p{
 }
 
 #calibri {
-    /* font-family: Calibri; */
+    font-family: Calibri;
 }
 
 #calibri-body {
-    /* font-family: Calibri (Body); */
+    font-family: Calibri (Body);
 }
 
 #calibri-body li a {
@@ -581,7 +578,7 @@ footer div p{
 
 /****************service strats********************/
 
-.body-ser {
+/* .body-ser {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -633,7 +630,7 @@ footer div p{
     left: 40px;
     top: 42px;
     font-size: 4rem;
-    /* font-family: sans-serif; */
+    font-family: sans-serif;
     font-weight: 800;
     z-index: 1;
     opacity: 0.5;
@@ -657,7 +654,7 @@ footer div p{
 .container-ser .box-ser p {
     position: relative;
     z-index: 2;
-    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: Arial, Helvetica, sans-serif;
     color: #555;
     transition: 0.5;
 }
@@ -665,15 +662,63 @@ footer div p{
 .container-ser .box-ser:hover h3,
 .container-ser .box-ser:hover p {
     color: #fff !important;
-}
+} */
 
 
 /****************service end********************/
 
 
 /****************service-section starts********************/
+.container{
+    position: relative;
+    margin: 20px;
+}
+.container .row-service{
+    display: flex;
+}
+.img{
+    position: relative;
+    min-width:100%;
+    transition: transform 0.4s;
 
-.section-cardStats {}
+}
+.img:hover{
+    transform: scale(0.2) rotate(-15deg);
+}
+.card-body{
+    position: absolute;
+    font-size: 3em;
+    top: 5px;
+    left: 3px;
+    bottom: 10px;
+    margin-left: 22px;
+    margin-right: 26px;
+    background-color: rgba(0, 0, 0, 0.801);
+     align-items: center;
+     transform: scaleY(0);
+     transition: transform .5s;
+     
+    
+
+}
+.card-text{
+    padding: 20px;
+    color: white;
+}
+.card-title{
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    padding: 0px;
+}
+.content:hover .card-body{
+    
+     transform: scaleY(1);
+
+}
+
+
+/* .section-cardStats {}
 
 .section-cards {
     width: 25%;
@@ -719,7 +764,7 @@ footer div p{
     background-color: #000;
     color: white;
     transition: .5s;
-}
+} */
 
 
 /****************service-section ends********************/
@@ -876,7 +921,7 @@ contactus-img
 }
 
 #para {
-    /* font-family: sans-serif; */
+    font-family: sans-serif;
     font-size: 20px;
     padding: 30px;
 }
