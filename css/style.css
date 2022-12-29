@@ -871,11 +871,7 @@ contactus-img
     color: #0af3f7;
 }
 
-#para {
-    /* font-family: sans-serif; */
-    font-size: 20px;
-    padding: 30px;
-}
+
 
 .smart-pic {
     width: 300px;
@@ -1255,9 +1251,7 @@ contactus-img
     position: relative;
 }
 
-#section-row {
-    padding-left: 40px;
-}
+
 
 #section-row img {
     width: 300px;
@@ -1309,9 +1303,7 @@ contactus-img
 }
 
 .potos-waste {
-    padding-left: 40px;
-    margin-bottom: 25px;
-    ;
+    margin-bottom: 20px;
 }
 
 .potos-waste img {
@@ -1364,9 +1356,7 @@ contactus-img
     position: relative;
 }
 
-.potos-guest {
-    padding-left: 40px;
-}
+
 
 .potos-guest img {
     width: 300px;
@@ -1398,9 +1388,7 @@ contactus-img
     position: relative;
 }
 
-.potos-emergency {
-    padding-left: 40px;
-}
+
 
 .potos-emergency img {
     width: 300px;
@@ -1586,8 +1574,8 @@ contactus-img
 }
 
 .property-pic2 {
-    width: 300px;
-    height: 550px;
+    width: auto;
+    height: 300px !important;
     background-image: url('../images/property1.webp');
     background-repeat: no-repeat;
     clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
