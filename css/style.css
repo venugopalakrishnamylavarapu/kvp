@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif ;
+    font-family: sans-serif;
 }
 
 a {
@@ -48,7 +48,8 @@ p {
     color: #fff !important;
     font-weight: 500;
 }
-header .navbar{
+
+header .navbar {
     padding: 0px;
 }
 
@@ -72,30 +73,35 @@ header .navbar{
     color: white;
     font-size: 26px;
 }
+
 .navbar-nav .nav-link {
-    
+
     padding: 14px 0px;
-   
+
 
 }
+
 .nav-item:hover {
-   border-bottom: 3px solid #ff9595;
+    border-bottom: 3px solid #ff9595;
 }
-.nav-item{
+
+.nav-item {
     border-bottom: 3px solid #063970;
 }
 
-@media (max-width: 991.98px){
+@media (max-width: 991.98px) {
     .navbar-nav .nav-link {
         padding: 2px 0px !important;
     }
+
     .nav-item:hover {
         border-bottom: none;
         color: #ff9595 !important;
-     }
-     .nav-item{
-         border-bottom: none;
-     }
+    }
+
+    .nav-item {
+        border-bottom: none;
+    }
 }
 
 @media only screen and(max-width:100px) {
@@ -111,7 +117,8 @@ p {
     color: #606060;
 }
 
-#para1 ,.para1 li{
+#para1,
+.para1 li {
     color: #606060;
     text-align: justify !important;
     font-size: 1.1rem !important;
@@ -265,7 +272,8 @@ carusel-img {
     color: white;
 }
 
-.servicediv p,.serviceoffers-para {
+.servicediv p,
+.serviceoffers-para {
     color: rgb(194, 194, 194) !important;
 }
 
@@ -421,7 +429,6 @@ carusel-img {
 .box a img {
     width: 100px;
     height: 100px;
-    margin-top: 20px;
 }
 
 .box h1 {
@@ -436,9 +443,7 @@ carusel-img {
 
 /*contact us  css strats*/
 
-.contactus {
-    margin-top: 0px;
-}
+
 
 .form-contact input,
 .form-contact textarea {
@@ -466,12 +471,12 @@ carusel-img {
 }
 
 .form-button button {
-    
+
     border-radius: 100px;
     margin: 0 5px;
     padding: 12px 35px;
     outline: none;
-    
+
     font-size: 1rem;
     color: #ffffff;
     border: 1px solid #ffffff;
@@ -510,8 +515,10 @@ carusel-img {
     font-size: medium;
 }
 
-.links li:hover a i{
-color: #ff9595;}
+.links li:hover a i {
+    color: #ff9595;
+}
+
 .links li a i {
     font-size: 18px;
 }
@@ -525,14 +532,17 @@ color: #ff9595;}
     text-align: center;
     text-decoration: none;
 }
- #calibro-body li:hover  #calibro-body li a{
+
+#calibro-body li:hover #calibro-body li a {
     font-weight: bold !important;
 }
-#calibri-body li:hover a{
+
+#calibri-body li:hover a {
     color: #ff9595 !important;
     letter-spacing: 0;
 }
-footer div p{
+
+footer div p {
     display: inline !important;
 }
 
@@ -558,13 +568,7 @@ footer div p{
     background: #606060;
 }
 
-#calibri {
-    /* font-family: Calibri; */
-}
 
-#calibri-body {
-    /* font-family: Calibri (Body); */
-}
 
 #calibri-body li a {
     color: rgb(0, 0, 0);
@@ -673,7 +677,6 @@ footer div p{
 
 /****************service-section starts********************/
 
-.section-cardStats {}
 
 .section-cards {
     width: 25%;
@@ -706,7 +709,6 @@ footer div p{
 }
 
 .section-des button {
-    margin-top: 2px;
     margin-bottom: 10px;
     background-color: white;
     border: 1px solid black;
@@ -742,7 +744,6 @@ contactus-img
 /****************about starts**********/
 
 #About-para {
-    margin-top: 50px;
     padding-left: 40px;
     font-weight: 700;
 }
@@ -757,9 +758,8 @@ contactus-img
     padding: 0 8%;
 }
 
-.about-header{
+.about-header {
     /* min-height: 50vh; */
-    margin-top: 38px;
     overflow: hidden;
     max-height: 100vh;
 }
@@ -834,7 +834,6 @@ contactus-img
 }
 
 .ser-bg {
-    margin-top: 20px;
     width: 100%;
     height: 80px;
     background-color: black;
@@ -858,11 +857,9 @@ contactus-img
     clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
     background-size: 100% 100%;
     position: relative;
-    margin-top: 20px;
 }
 
 #heading {
-    margin-top: 20px;
     font-size: xx-large;
     color: #2fccd0;
     align-items: center;
@@ -870,7 +867,6 @@ contactus-img
 }
 
 #heading:hover {
-    margin-top: 20px;
     font-size: xx-large;
     color: #0af3f7;
 }
@@ -888,13 +884,13 @@ contactus-img
     clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
     background-size: 100% 100%;
     position: relative;
-    margin-top: 20px;
 }
 
 @media (min-width:590px) and (max-width:900px) {
+
     .smart-pic1,
     .smart-pic {
-        margin:auto;
+        margin: auto;
     }
 }
 
@@ -922,20 +918,23 @@ contactus-img
     clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
     background-size: 100% 100%;
     position: relative;
-    margin-top: 20px;
 }
 
-.smart-text{
-    color: #063970; font-weight: 800;font-size: 75px;
+.smart-text {
+    color: #063970;
+    font-weight: 800;
+    font-size: 75px;
 }
-@media (max-width:768px){
-    .smart-text{
+
+@media (max-width:768px) {
+    .smart-text {
         font-size: 30px;
     }
 }
+
 @media screen and (min-width:580px) and (max-width:990px) {
     .engineer-pic {
-       margin: auto;
+        margin: auto;
     }
 }
 
@@ -960,7 +959,6 @@ contactus-img
     clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
     background-size: 100% 100%;
     position: relative;
-    margin-top: 25px;
 }
 
 .plant-pic2 {
@@ -978,11 +976,7 @@ contactus-img
     }
 }
 
-@media screen and (min-width:580px) and (max-width:990px) {
-    .plant-pic {
-        margin-top: 125px;
-    }
-}
+
 
 
 /***************************PLANT MAINTANCE END***********************/
@@ -1003,15 +997,10 @@ contactus-img
     width: 280px;
     height: 400px;
     position: relative;
-    margin-top: 20px;
     margin-bottom: 25px;
 }
 
-@media screen and (min-width:5px) and (max-width:760px) {
-    .green-pic {
-        margin-top: 350px;
-    }
-}
+
 
 
 /***************************GREEN BUILDING END***********************/
@@ -1034,7 +1023,6 @@ contactus-img
     clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
     background-size: 100% 100%;
     position: relative;
-    margin-top: 20px;
 }
 
 .disImg-bg {
@@ -1076,7 +1064,6 @@ contactus-img
     clip-path: polygon(25% 0%, 100% 0, 75% 100%, 0% 100%);
     background-size: 100% 50%;
     position: relative;
-    margin-top: 20px;
 }
 
 .potos-text {
@@ -1084,11 +1071,7 @@ contactus-img
     font-weight: 400;
 }
 
-@media screen and (min-width:588px) and (max-width:760px) {
-    .ground-pic {
-        margin-top: 275px;
-    }
-}
+
 
 @media screen and (min-width:660px) {
     .potos-text {
@@ -1096,11 +1079,6 @@ contactus-img
     }
 }
 
-@media screen and (min-width:1000px) {
-    p#para {
-        margin-top: 95px;
-    }
-}
 
 @media only screen and (max-width: 768px) {}
 
@@ -1143,15 +1121,10 @@ contactus-img
     clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
     background-size: 100% 100%;
     position: relative;
-    margin-top: 125px;
+
     margin-bottom: 15px;
 }
 
-@media screen and (min-width:580px) and (max-width:990px) {
-    .pest-pic {
-        margin-top: 145px;
-    }
-}
 
 
 /***************************PEAST CONTROL ENDS***********************/
@@ -1207,7 +1180,6 @@ contactus-img
     clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
     background-size: 100% 100%;
     position: relative;
-    margin-top: 45px;
 }
 
 
@@ -1218,7 +1190,6 @@ contactus-img
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
     background-size: 100% 100%;
     position: relative;
-    margin-top: 20px;
 }
 
 
@@ -1242,7 +1213,7 @@ contactus-img
     clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
     background-size: 100% 100%;
     position: relative;
-    margin-top: 185px;
+
 }
 
 .facade-pic2 {
@@ -1251,7 +1222,6 @@ contactus-img
     clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
     background-size: 100% 100%;
     position: relative;
-    margin-top: 20px;
 }
 
 
@@ -1358,7 +1328,6 @@ contactus-img
 
 
 .potos-waste center {
-    margin-top: 15px;
     margin-left: 8px;
 }
 
@@ -1477,11 +1446,7 @@ contactus-img
     position: relative;
 }
 
-@media screen and (max-width:570px) {
-    .repair-pic2 {
-        margin-top: 75px;
-    }
-}
+
 
 
 /***************************REPAIR AND MAINTANACE END***********************/
@@ -1505,7 +1470,6 @@ contactus-img
     clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
     background-size: 100% 100%;
     position: relative;
-    margin-top: 20px;
 }
 
 .ITequipment-pic2 {
@@ -1522,7 +1486,6 @@ contactus-img
     clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
     background-size: 100% 100%;
     position: relative;
-    margin-top: 20px;
     margin-bottom: 25px;
 }
 
@@ -1581,7 +1544,6 @@ contactus-img
     clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
     background-size: 100% 100%;
     position: relative;
-    margin-top: 20px;
 }
 
 .safety-pic5 {
@@ -1621,7 +1583,6 @@ contactus-img
     clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
     background-size: 100% 100%;
     position: relative;
-    margin-top: 75px;
 }
 
 .property-pic2 {
@@ -1632,7 +1593,6 @@ contactus-img
     clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
     background-size: 100% 100%;
     position: relative;
-    margin-top: 80px;
 }
 
 
@@ -1706,7 +1666,6 @@ contactus-img
 }
 
 .user-name {
-    margin-top: 30px;
     font-size: 16px;
     font-weight: 100;
 
@@ -1715,8 +1674,7 @@ contactus-img
 
 .profile p {
     font-size: 16px;
-    margin-top: 2px;
-    text-align: justify;
+   text-align: justify;
 }
 
 
@@ -1779,7 +1737,7 @@ contactus-img
 #team-port {
     color: rgb(255, 255, 255);
     font-weight: 400;
-    margin-top: 5px;
+
 }
 
 .team-heading {
@@ -1836,7 +1794,6 @@ img:hover {
 }
 
 .user-name {
-    margin-top: 30px;
     font-size: 16px;
     font-weight: 100;
     columns: rgb(13, 35, 109);
@@ -1844,7 +1801,6 @@ img:hover {
 
 .profile p {
     font-size: 16px;
-    margin-top: 2px;
     text-align: justify;
 }
 
@@ -1852,11 +1808,13 @@ img:hover {
     .profiles {
         flex-direction: column;
     }
+
     .profile {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+
     .profile p {
         text-align: center;
         margin: 20px 60px 80px 60px;
@@ -1870,12 +1828,15 @@ img:hover {
         color: rgb(12, 14, 121);
         text-align: center;
     }
+
     .heading span {
         font-size: 15px;
     }
+
     .profile {
         margin: 20px 0;
     }
+
     .profile {
         margin: 20px 10px 80px 10px;
     }
@@ -1915,18 +1876,22 @@ img:hover {
         border-color: red;
         transform: scale(1);
     }
+
     25% {
         border-color: gold;
         transform: scale(1.1);
     }
+
     50% {
         background-color: lime;
         scale: (1.3);
     }
+
     75% {
         background-color: dodgerblue;
         scale: (1.1);
     }
+
     100% {
         border-color: purple;
         transform: scale(1);
@@ -1943,27 +1908,25 @@ img:hover {
     .vav-item {
         text-align: center !important;
     }
+
     .pricing,
     .happyclients .contactus .newsletter {
         height: auto;
-        margin-top: 50px;
     }
+
     .card-second {
         transform: translateY(0px);
         margin: 30px;
     }
-    #newsletterid {
-        margin-top: 30px;
-    }
-    #footerdiv {
-        margin-top: 30px;
-    }
+
+
 }
 
 @media only screen and (min-width: 377px) and (max-width:667px) {
     .section-cardStats {
         width: 100%;
     }
+
     .section-cards {
         width: 100%;
     }
