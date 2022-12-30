@@ -35,9 +35,9 @@
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
   </script>
   <script type="text/javascript">
-      (function () {
-          emailjs.init("wJLIKjkjnP90fJ_g7");
-      })();
+    (function () {
+      emailjs.init("wJLIKjkjnP90fJ_g7");
+    })();
   </script>
 
   <!-- emailjs link close -->
@@ -58,128 +58,46 @@
 
   <!-------------------------NAV BAR ENDS----------------------------->
   <div style="background-color:#063970; padding-top: 60px; min-height: 100vh;">
-<div class="container m-0" >
-  <div class="row m-0  " >
+    <div class="container py-auto">
+      <div class="row m-0 ">
 
-    <div class="col-lg-6 my-auto ">
-        <img src="./images/contactus100.png" class="img-fluid w-100" alt="">
-    </div>
+        <div class="col-lg-6 my-auto ">
+          <img src="./images/contactus100.png" class="img-fluid w-100" alt="">
+        </div>
 
-    <div class="col-lg-6 py-3 w-md-75">
-        <h1 class="text-white text-center">Contact form</h1>
-        <div class=" w-75 m-auto p-3">
+        <div class="col-lg-6 py-3 w-md-75">
+          <h1 class="text-white text-center">Contact form</h1>
+          <div class=" w-75 m-auto p-3">
             <div class="form-group py-2">
-                <h5 for="name" class="text-white">Name</h5>
-                <input type="text" class="form-control  rounded-pill" id="name" placeholder="Enter your name" />
+              <h5 for="name" class="text-white">Name</h5>
+              <input type="text" class="form-control  rounded-pill" id="name" placeholder="Enter your name" />
             </div>
             <div class="form-group py-2">
-                <h5 for="email" class="text-white">email</h5>
-                <input type="email" class="form-control  rounded-pill" id="email" placeholder="Enter your email" />
+              <h5 for="email" class="text-white">email</h5>
+              <input type="email" class="form-control  rounded-pill" id="email" placeholder="Enter your email" />
             </div>
             <div class="form-group py-2">
-                <h5 for="number" class="text-white">Mobil number</h5>
-                <input type="number" class="form-control rounded-pill" id="number" placeholder="Enter your number" />
+              <h5 for="number" class="text-white">Mobil number</h5>
+              <input type="number" class="form-control rounded-pill" id="number" placeholder="Enter your number" />
             </div>
             <div class="form-group py-2">
-                <h5 for="message" class="text-white">message</h5>
-                <textarea name="message" id="message" class="w-100 rounded" rows="3"></textarea>
+              <h5 for="message" class="text-white">message</h5>
+              <textarea name="message" id="message" class="w-100 rounded" rows="3"></textarea>
             </div>
-           
+
             <div class="d-flex justify-content-center form-button">
-              <button type="submit" class="btn" onclick="emailTrigger()">Submit</button></div>
-        </div>
-    </div>
-</div>
-</div>
-  </div>
-  <!-------------------------HEADER SECTION STARTS----------------------------->
-
-  <!-- <div class="about-header">
-    <div>
-      <img src="./images/contactUs.jpg" class="w-100 img-fluid" alt="about banner">
-    </div>
-
-  </div> -->
-
-  <!-------------------------HEADER SECTION ENDS ENDS----------------------------->
-
-
-
-
-
-
-  <!--contact us starts-->
-
-  <!-- <section class="contactus mt-5" id="contact">
-    <div class="container headings text-center">
-      <h1 class="text-center font-weight-bold  my-3">Contact Us</h1>
-      <p style="font-weight:700 ; " class="text-center">We're Here To Help And Answer Any Question You Might Have Look Forword To Hearing
-        From You </p>
-    </div>
-
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 col-md -8 col-10 offset-lg-2 offset-md-2 offset-1 form-contact">
-
-          <form action="/action_page.php">
-            <div class="form-group">
-              <input type="text" class="form-control" placeholder="Enter  Name" id="username">
-            </div>
-
-            <form action="/action_page.php">
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Enter Email ID" id="email">
-              </div>
-
-              <form action="/action_page.php">
-                <div class="form-group">
-                  <input type="text" class="form-control" placeholder="Mobile number" id="number">
-                </div>
-
-                <div class="form-group">
-                  <textarea class="form-control" rows="5" id="comment"></textarea>
-                </div>
-
-                <div class="d-flex justify-content-center form-button">
-                  <button type="submit" class="btn">Submit</button>
-              </form>
-        </div>
-
-      </div>
-    </div>
-
-    </div>
-  </section> -->
-
-
-  <!--contact us ends-->
-
-  <!--News letter strats-->
-
-  <!-- <section class="newsletter" id="newsletterid">
-    <div class="container headings text-center">
-      <h3 class="text-center font-weight-bold">News Letter</h3>
-    </div>
-
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 offset-lg-2 col-12">
-          <div class="input-group mt-5">
-            <input type="text" class="form-control news-input" placeholder="Your Email">
-            <div class="input-group-append">
-              <span class="input-group-text">admin@kvsrpenterprises.com</span>
+              <button type="submit" class="btn" onclick="emailTrigger()">Submit</button>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </section> -->
-
+  </div>
 
 
   <!--footer starts-->
   <footer class="footersection mt-0" id="footerdiv">
-  
+
   </footer>
   <!--footer end-->
 
@@ -220,35 +138,35 @@
   </script>
 
   <!-- email script open-->
-<script>
-  function emailTrigger() {
+  <script>
+    function emailTrigger() {
       let info_value = {
-          name: document.getElementById("name").value,
-          email: document.getElementById("email").value,
-          number: document.getElementById("number").value,
-          message: document.getElementById("message").value
+        name: document.getElementById("name").value,
+        email: document.getElementById("email").value,
+        number: document.getElementById("number").value,
+        message: document.getElementById("message").value
       }
       console.log('info_value :: ', info_value)
       const serviceID = "service_63vtp4q";
       const templateId = "template_ydnlbbq";
 
       emailjs.send(serviceID, templateId, info_value)
-          .then(
-              res => {
-                  console.log(res, 'Mail send')
-                  document.getElementById("name").value = "";
-                  document.getElementById("email").value = "";
-                  document.getElementById("number").value = "";
-                  document.getElementById("message").value = "";
+        .then(
+          res => {
+            console.log(res, 'Mail send')
+            document.getElementById("name").value = "";
+            document.getElementById("email").value = "";
+            document.getElementById("number").value = "";
+            document.getElementById("message").value = "";
 
 
-                  alert("your message send succesfully")
+            alert("your message send succesfully")
 
-              }
-          )
-          .catch((err) => console.log(err))
-  }
-</script>
+          }
+        )
+        .catch((err) => console.log(err))
+    }
+  </script>
   <!--script ends-->
   <script src="./js_File/KVSRP.js"></script>
 
