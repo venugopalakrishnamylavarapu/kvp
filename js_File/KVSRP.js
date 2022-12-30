@@ -120,7 +120,7 @@ const gnHeaderHTML = `<div class="menu-bar sticky-top">
     <a class="navbar-brand ms-2 text-white" href="index.html"><img src="./images/KVSRP Logo (002).png" alt="logo" style="width: 40px;"></a>
     <span class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav"
       aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+      <i class="fa fa-bars text-white" aria-hidden="true"></i>
     </span>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ml-auto">
