@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;1,600&family=Poppins:wght@200;400&display=swap');
+:root{
+    --color:#063970;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -31,7 +35,7 @@ p {
 /************************NAVBAR-STARTS**********************************/
 
 .menu-bar {
-    background-color: #063970;
+    background-color:var(--color)
 }
 
 #headerr .menu-bar {
@@ -84,7 +88,7 @@ header .navbar {
 }
 
 .nav-item {
-    border-bottom: 3px solid #063970;
+    border-bottom: 3px solid var(--color);
 }
 
 @media (max-width: 991.98px) {
@@ -141,6 +145,10 @@ p {
 .i {
     color: #2fccd0;
 }
+.banner img{
+    height: 100vh;
+    overflow: hidden;
+}
 
 
 /************************NAVBAR-ENDS**********************************/
@@ -151,7 +159,7 @@ p {
 .headerr {
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(#ffffff24, #3f51b5), url(../images/homeBanner.jpg);
+    background-image: linear-gradient(#ffffff24, var(--color)), url(../images/homeBanner.jpg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     position: relative;
@@ -167,12 +175,12 @@ p {
     right: 0;
     clip-path: polygon(100% 0%, 100% 77%, 50% 100%, 0 75%, 0 0);
     z-index: -1;
-    background-color: #063970;
+    background-color: var(--color);
 
 } */
 
 .header-color {
-    background-color: #063970;
+    background-color:var(--color)
 }
 
 
@@ -188,7 +196,7 @@ p {
         clip-path: ellipse(571px 143px at 50% 100%);  
 
               z-index: -1;
-        background-color: #063970;
+        background-color: var(--color);
 } */
 
 .header-content {
@@ -234,7 +242,7 @@ carusel-img {
 /*service offer css strats */
 
 .serviceoffers {
-    background: #063970;
+    background: var(--color);
     padding: 50px 0;
     margin-bottom: 50px;
 }
@@ -280,7 +288,7 @@ carusel-img {
 }
 
 .services .card-title {
-    color: #063970;
+    color: var(--color);
 }
 
 .services .card {
@@ -357,7 +365,7 @@ carusel-img {
 }
 
 .card-footer a {
-    border: 1px solid #063970;
+    border: 1px solid var(--color);
     border-radius: 100px;
     margin: 0 5px;
     padding: 12px 35px;
@@ -371,9 +379,9 @@ carusel-img {
 
 .card-footer a:hover {
     color: #fff;
-    background: #063970;
+    background: var(--color);
     text-decoration: none;
-    box-shadow: 0 0 20px #063970;
+    box-shadow: 0 0 20px var(--color);
 }
 
 .card:hover {
@@ -381,7 +389,7 @@ carusel-img {
 }
 
 .card:hover .card-header {
-    color: #063970;
+    color: var(--color);
 }
 
 .card-second {
@@ -417,7 +425,7 @@ carusel-img {
 }
 
 .carousel-indicators li {
-    background-color: #063970;
+    background-color: var(--color);
 }
 
 .box a {
@@ -467,7 +475,7 @@ carusel-img {
     bottom: 0;
     right: 0;
     clip-path: polygon(0 0, 100% 100%, 0 100%);
-    background-color: #063970;
+    background-color: var(--color);
     z-index: -1;
 }
 
@@ -487,7 +495,7 @@ carusel-img {
 }
 
 .form-button button:hover {
-    color: #063970;
+    color: var(--color);
     background-color: white;
 }
 
@@ -502,7 +510,7 @@ carusel-img {
     width: 100%;
     height: auto;
     padding: 10px 0 10px 0;
-    background: #063970;
+    background: var(--color);
     position: relative;
 }
 
@@ -621,7 +629,7 @@ footer div p {
     left: 0;
     width: 100%;
     height: 100%;
-    background: #063970;
+    background: var(--color);
     transform: scaleY(0);
     transform-origin: top;
     transition: transform 0.5s;
@@ -816,7 +824,7 @@ contactus-img
 }
 
 .about-heading {
-    color: #063970;
+    color: var(--color);
 }
 
 .containerAbout {
@@ -842,7 +850,7 @@ contactus-img
 
 .containerAbouth1:after {
     content: "";
-    background: #063970;
+    background: var(--color);
     width: 110px;
     height: 10px;
     position: absolute;
@@ -870,7 +878,7 @@ contactus-img
 .service i {
     font-size: 40px;
     padding: 10px;
-    color: #063970;
+    color: var(--color);
 }
 
 .service h2 {
@@ -879,7 +887,7 @@ contactus-img
 }
 
 .service:hover {
-    background-color: #063970;
+    background-color: var(--color);
     color: #fff;
     transform: scale(1.05);
 }
@@ -983,7 +991,7 @@ contactus-img
 }
 
 .smart-text {
-    color: #063970;
+    color: var(--color);
     font-weight: 800;
     font-size: 75px;
 }
