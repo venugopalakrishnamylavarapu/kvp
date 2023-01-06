@@ -1,0 +1,97 @@
+
+.breadcrumbs {
+	padding-bottom: 15px;
+    padding-top: 15px;
+    padding-left: 40px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.07);
+    position: relative;
+	text-align:left;
+}
+
+.breadcrumbs:before {
+    content: "\e096";
+    color: #ffc952;
+    font-family: "simple-line-icons";
+    font-size: 24px;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 6px;
+}
+
+.breadcrumbs .trail-browse {
+    margin: 0 7px 0 0;
+    font-family: inherit;
+    font-size: inherit;
+    font-style: inherit;
+    font-weight: inherit;
+    color: inherit;
+    display: inline-block;
+}
+
+.breadcrumbs .trail-items {
+	display: inline-block;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: transparent;
+    text-indent: 0;
+}
+
+.breadcrumbs .trail-items li {
+    display: inline-block;
+    margin: 0;
+    padding: 0 18px 0 0;
+    border: none;
+    background: transparent;
+    text-indent: 0;
+    position: relative;
+}
+
+.breadcrumbs .trail-items li a {
+	color: #32bfc0;
+}
+
+.breadcrumbs .trail-items li a:hover {
+	color: #333;
+}
+
+.breadcrumbs .trail-items li.trail-item::after {
+	position: absolute;
+	right: 5px;
+	top: 0;
+    content: "/";
+    color: #ccc;
+}
+.flat-toggle.wow.bounceInLeft{
+    padding: 35px;
+    line-height: 1.8;
+    font-family: "Source Sans Pro", sans-serif;
+
+}
+.toggle-title {
+    background-color:rgb(255, 200, 30);
+    color: white;
+    margin: 17px;
+    line-height: 1.4;
+    width: 75%;
+    font-size: 20px;
+  padding: 15px 0 15px 20px ;
+  
+    
+}
+ul.iconlist.icn-list{
+    list-style: none;
+}
+.col-md-6.color{
+    display: flex;
+    
+    
+}
+.copyright-content{
+    TEXT-ALIGN: center;
+    BACKGROUND-COLOR: #000000b8;
+    COLOR: WHITE;
+    PADDING: 10PX;
+}
+
