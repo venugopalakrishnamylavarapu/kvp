@@ -27,7 +27,6 @@ body {
 }
 
 p {
-    word-break: break-all;
     justify-content: stretch;
 }
 
