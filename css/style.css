@@ -153,6 +153,9 @@ p {
 
 /************************NAVBAR-ENDS**********************************/
 
+/* yvyhguhhi */
+
+/* gcgchhvhv */
 
 /************************HEADER-STARTS**********************************/
 
@@ -1999,3 +2002,31 @@ img:hover {
         flex-direction: column;
     }
 }
+
+/* services in home page */
+
+.custom-tooltip {
+    --bs-tooltip-bg: var(--bs-primary);
+  }
+
+ .service_icons .btn:focus{
+    box-shadow: none !important;
+  }
+  .service_icons .btn:active{
+    border: none !important;
+  }
+.divData img{
+    transition: 0.4s ease-out;
+    margin: 10px;
+    max-width: 100px;
+    height: 100px;
+}
+ .divData:hover  img{
+    transform: scale(1.2);
+    background-color:var(--color) ;
+    border-radius: 50%;
+    transition: 0.5s ease-in;
+  }
+  .service_heading{
+    color: var(--color);
+  }
