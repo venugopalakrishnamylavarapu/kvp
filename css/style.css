@@ -16,6 +16,7 @@ a {
 
 li {
     list-style: none;
+    text-align: justify;
 }
 
 a:hover {
@@ -28,6 +29,10 @@ body {
 
 p {
     justify-content: stretch;
+}
+
+.pa-top{
+    padding-top: 60px;
 }
 
 
@@ -95,9 +100,13 @@ header .navbar {
         padding: 2px 0px !important;
     }
 
-    .nav-item:hover {
-        border-bottom: none;
+    .nav-link:hover {
+        border-bottom: none !important;
         color: #ff9595 !important;
+    }
+    .nav-item:hover{
+        border-bottom: none !important;
+
     }
 
     .nav-item {
@@ -2026,6 +2035,53 @@ img:hover {
     border-radius: 50%;
     transition: 0.5s ease-in;
   }
+  .divData:focus-visible{
+    border: none !important;
+  }
+  .service_icons:focus-visible{
+    border: none !important;
+  }
+  .service_icons:active{
+    border: none !important;
+  }
+  .divData:active{
+    border: none !important;
+  }
   .service_heading{
     color: var(--color);
   }
+
+  /* carrer open */
+  .carrer li{
+    list-style: disc !important;
+  }
+  .accordion-item{
+    border: none !important;
+  }
+  .accordion-button:not(.collapsed) {
+    color: white !important;
+    background-color: var(--color) !important;
+    box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
+  }
+  .accordion-item:last-of-type .accordion-button.collapsed{
+    color: var(--color);
+  }
+  .accordion-button:focus{
+    border-color: none !important; 
+    box-shadow: none !important;
+  }
+  
+.bold, .accordion i{
+    color: black;
+}
+
+/* key points open */
+
+.grid-sec ,.grid-sec .row , .grid-sec .row .col{
+    padding: 0;
+    margin: 0;
+}
+.grid-sec .rounded{
+    height: 100%;
+    width: 100%;
+}

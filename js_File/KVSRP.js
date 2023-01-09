@@ -19,6 +19,12 @@ const homeHeaderHTML = `
                         <a class="nav-link" href="service.html">SERVICES</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="carrer.html">CAREER</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="key.html">KEY FEATURES</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link " href="contact.html">CONTACT</a>
                     </li>
                 </ul>
@@ -80,6 +86,8 @@ const footerHTML = `  <div class="container">
         <li><a class="text-white" href="index.html">Home</a></li>
         <li><a class="text-white" href="about.html">About Us</a></li>
         <li><a class="text-white" href="service.html">Service</a></li>
+        <li><a class="text-white" href="carrer.html">Carrer</a></li>
+        <li><a class="text-white" href="key.html">Key Features</a></li>
         <li><a class="text-white" href="contact.html">Contact Us</a></li>
       </ul>
     </div>
@@ -114,31 +122,38 @@ const footerHTML = `  <div class="container">
 
 </div>`;
 
-const gnHeaderHTML = `<div class="menu-bar sticky-top">
+const gnHeaderHTML = ` <div class="menu-bar sticky-top">
 <div class="fixed-top header-color">
-  <nav class="navbar navbar-expand-lg navbar-light my-0 container">
-    <a class="navbar-brand ms-2 text-white" href="index.html"><img src="./images/KVSRP Logo (002).png" alt="logo" style="width: 40px;"></a>
-    <span class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-      aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-      <i class="fa fa-bars text-white" aria-hidden="true"></i>
-    </span>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item active ">
-          <a class="nav-link" href="index.html">HOME </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="about.html">ABOUT</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="service.html">SERVICES</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link " href="contact.html">CONTACT</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+    <nav class="navbar navbar-expand-lg navbar-light my-0 container">
+        <a class="navbar-brand ms-2 text-white" href="index.html"><img
+                src="./images/KVSRP Logo (002).png" alt="logo" style="width: 40px;"></a>
+        <span class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa fa-bars text-white" aria-hidden="true"></i>
+        </span>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active ">
+                    <a class="nav-link" href="index.html">HOME </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="service.html">SERVICES</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="carrer.html">CAREER</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="key.html">KEY FEATURES</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="contact.html">CONTACT</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 </div>
 </div>`;
 
